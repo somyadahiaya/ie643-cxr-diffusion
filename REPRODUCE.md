@@ -7,7 +7,7 @@ contain `until … sleep` waits on the original machine's logs or PIDs; you can 
 ## 0. Environment, weights, data
 ```bash
 bash scripts/setup_env.sh
-bash scripts/download_weights.sh <hf_user>/<hf_repo>            # add --all for PRISM/phase-1/all LoRA steps
+bash scripts/download_weights.sh SillySom/ie643-cxr-diffusion-weights            # add --all for PRISM/phase-1/all LoRA steps
 # CheXpert-v1.0-small -> data/CheXpert-v1.0-small/{train,valid}  (data/README.md)
 PY=.venv311/bin/python
 ```

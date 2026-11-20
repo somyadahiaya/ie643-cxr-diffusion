@@ -59,7 +59,7 @@ data/                                         put CheXpert-v1.0-small here (see 
 ## Quick start
 ```bash
 bash scripts/setup_env.sh                                     # .venv311 with the exact package versions
-bash scripts/download_weights.sh <hf_user>/<hf_repo>          # base model weights (~2 GB); see CHECKPOINTS.md
+bash scripts/download_weights.sh SillySom/ie643-cxr-diffusion-weights          # base model weights (~2 GB); see CHECKPOINTS.md
 # CheXpert-v1.0-small: download from Stanford and unzip into data/   (see data/README.md)
 bash novelty/run_demo.sh 0 7860                               # demo at http://127.0.0.1:7860
 ```

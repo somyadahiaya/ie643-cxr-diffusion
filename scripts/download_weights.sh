@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 # Fetch the large files that are not in git (see CHECKPOINTS.md) from the Hugging Face model repo.
-#   bash scripts/download_weights.sh <hf_user>/<hf_repo>                 # base model weights needed by all code + demo (~2 GB)
-#   bash scripts/download_weights.sh <hf_user>/<hf_repo> --all           # + PRISM, phase-1 accelerate checkpoints, all LoRA steps (~7 GB)
-#   bash scripts/download_weights.sh <hf_user>/<hf_repo> --synthetic     # + the 15 generated image sets (~7 GB),
+#   bash scripts/download_weights.sh SillySom/ie643-cxr-diffusion-weights                 # base model weights needed by all code + demo (~2 GB)
+#   bash scripts/download_weights.sh SillySom/ie643-cxr-diffusion-weights --all           # + PRISM, phase-1 accelerate checkpoints, all LoRA steps (~7 GB)
+#   bash scripts/download_weights.sh SillySom/ie643-cxr-diffusion-weights --synthetic     # + the 15 generated image sets (~7 GB),
 #                                                                         #   unpacked into data/CheXpert-v1.0-small/
 # Private repo: run `.venv311/bin/hf auth login` first.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-REPO=${1:?usage: download_weights.sh <hf_user>/<hf_repo> [--all] [--synthetic]}; shift || true
+REPO=SillySom/ie643-cxr-diffusion-weights
+if [ $# -gt 0 ] && [ "${1#--}" = "$1" ]; then REPO=$1; shift; fi     # optional repo id, then flags
 HF=${HF:-.venv311/bin/hf}; [ -x "$HF" ] || HF=hf
 ALL=0; SYN=0
 for a in "$@"; do case $a in --all) ALL=1;; --synthetic) SYN=1;; esac; done

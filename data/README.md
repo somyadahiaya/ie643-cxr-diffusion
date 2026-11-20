@@ -13,7 +13,7 @@ All split CSVs use paths relative to `data/`, e.g. `CheXpert-v1.0-small/train/pa
 Each `data/CheXpert-v1.0-small/gen_<run>/` holds the 2,173-image set of one generator plus `synthetic_labels.csv`.
 There are two ways to get them:
 - regenerate them exactly with `novelty/generate.py` (see REPRODUCE.md step 4);
-- `bash scripts/download_weights.sh <hf_user>/<hf_repo> --synthetic`, which downloads the 15 tar archives
+- `bash scripts/download_weights.sh SillySom/ie643-cxr-diffusion-weights --synthetic`, which downloads the 15 tar archives
   (13 novelty sets + the phase-1 P-Rajiv and PRISM sets, ~7 GB) and unpacks them here.
 
 `phase1_synthetic_labels/` keeps the label lists of the two phase-1 synthetic sets.
