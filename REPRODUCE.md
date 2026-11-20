@@ -93,7 +93,8 @@ Where the report's numbers come from:
 
 ## 7. Demo
 ```bash
-bash novelty/run_demo.sh 0 7860          # ssh -L 7860:127.0.0.1:7860 <server> to view remotely
+bash novelty/run_demo.sh 0 7860          # demo/app.py on local files; ssh -L 7860:127.0.0.1:7860 <server> to view remotely
+# without a clone: see demo/README.md (python demo/app.py downloads the models from Hugging Face)
 ```
 The two demo classifiers were trained with:
 ```bash

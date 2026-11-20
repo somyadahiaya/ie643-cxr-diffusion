@@ -45,26 +45,37 @@ novelty/                                      PHASE 2 (novelty): all code, resul
   sweep_cfg.py img2img_augment.py chexpert_style.py filter_synth.py   generation-side variants
   pipeline_after_train.sh chain_*.sh          the exact command chains that produced every result
   make_report.py                              rebuilds novelty/report/ (tables.md, csv, figures) from results/ + downstream/
-  demo_app.py run_demo.sh                     Gradio demo: prompt -> generate -> judge / defect check / DenseNet
+  run_demo.sh                                 runs demo/app.py on this clone's local files
   heads/                                      frozen heads + calibration stats (needed by training, evaluation, demo)
   runs/<run>/                                 configs, train/eval logs, the selected LoRA checkpoint (all steps on HF)
   results/  downstream/  logs/  csv/          evaluation json/csv, per-run DenseNet logs (+2 demo weights), raw logs, train CSVs
   report/                                     generated tables and figures used in the report and poster
   prajiv_base/                                base SD-1.5 CXR pipeline configs/tokenizer (weights on HF)
+demo/                                         standalone Gradio demo (app.py + README + requirements): downloads models from HF
 report/                                       LaTeX report (IE643_Project_Report.tex/.pdf, refs.bib, figs)
 poster/                                       A0 poster (Gradient_Mavericks_IE643_Poster.tex/.pdf)
 data/                                         put CheXpert-v1.0-small here (see data/README.md)
 ```
 
-## Quick start
+## Demo (no clone needed)
+`demo/` is a self-contained Gradio app: prompt → synthetic X-ray from any of the 7 report generators → held-out judge,
+anatomy/OOD defect check and two DenseNet-121 classifiers. It downloads only the models it needs (~2.2 GB) from
+[`SillySom/ie643-cxr-diffusion-weights`](https://huggingface.co/SillySom/ie643-cxr-diffusion-weights):
+```bash
+export HF_TOKEN=hf_...            # read token with access to the (private) weights repo
+pip install -r demo/requirements.txt
+python demo/app.py                # http://127.0.0.1:7860
+```
+Full instructions, options and GPU notes: **[demo/README.md](demo/README.md)**.
+
+## Quick start (full project)
 ```bash
 bash scripts/setup_env.sh                                     # .venv311 with the exact package versions
-bash scripts/download_weights.sh SillySom/ie643-cxr-diffusion-weights          # base model weights (~2 GB); see CHECKPOINTS.md
+bash scripts/download_weights.sh                              # base model weights (~2 GB); see CHECKPOINTS.md
 # CheXpert-v1.0-small: download from Stanford and unzip into data/   (see data/README.md)
-bash novelty/run_demo.sh 0 7860                               # demo at http://127.0.0.1:7860
+bash novelty/run_demo.sh 0 7860                               # demo on the local files
 ```
-The demo needs only the base weights, the committed LoRAs/heads/classifiers and (for the "real test image" button)
-CheXpert. Full reproduction of every number, table and figure: **[REPRODUCE.md](REPRODUCE.md)**.
+Full reproduction of every number, table and figure: **[REPRODUCE.md](REPRODUCE.md)**.
 
 ## Large files
 Git holds the code and everything under ~30 MB per file: the selected LoRA of every run, the judge heads, and the two
