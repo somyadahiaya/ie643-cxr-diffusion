@@ -1,0 +1,71 @@
+{
+ "m_y": {
+  "No Finding": 0.7871493697166443,
+  "Enlarged Cardiomediastinum": 0.9031747579574585,
+  "Lung Lesion": 1.110759973526001,
+  "Pneumonia": 1.2392346858978271,
+  "Pleural Other": 1.1890242099761963,
+  "Fracture": 0.42913395166397095
+ },
+ "kept_total": 1179,
+ "of": 2173,
+ "per_class": {
+  "Enlarged Cardiomediastinum": [
+   294,
+   500
+  ],
+  "Fracture": [
+   74,
+   173
+  ],
+  "Lung Lesion": [
+   296,
+   500
+  ],
+  "Pleural Other": [
+   411,
+   500
+  ],
+  "Pneumonia": [
+   104,
+   500
+  ]
+ }
+} 
+CSV: /home/surajracha/pedal_for_healthcare/cs6101/Project_IE643/novelty/csv/classifier_train_mixed_gen_ce_adv_filt.csv
+{
+ "m_y": {
+  "No Finding": 0.7871493697166443,
+  "Enlarged Cardiomediastinum": 0.9031747579574585,
+  "Lung Lesion": 1.110759973526001,
+  "Pneumonia": 1.2392346858978271,
+  "Pleural Other": 1.1890242099761963,
+  "Fracture": 0.42913395166397095
+ },
+ "kept_total": 627,
+ "of": 2173,
+ "per_class": {
+  "Enlarged Cardiomediastinum": [
+   197,
+   500
+  ],
+  "Fracture": [
+   24,
+   173
+  ],
+  "Lung Lesion": [
+   72,
+   500
+  ],
+  "Pleural Other": [
+   228,
+   500
+  ],
+  "Pneumonia": [
+   106,
+   500
+  ]
+ }
+} 
+CSV: /home/surajracha/pedal_for_healthcare/cs6101/Project_IE643/novelty/csv/classifier_train_mixed_gen_ce_adv_i2i_filt.csv
+[recipe] CHAIN DONE

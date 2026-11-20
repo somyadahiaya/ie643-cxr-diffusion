@@ -1,0 +1,178 @@
+{
+ "No Finding": {
+  "n": 500,
+  "requested_finding_rate": 0.778,
+  "eval_real_recall": 0.36,
+  "normalised_cond": 2.1611111111111114,
+  "cond_auroc": 0.9303810400368154,
+  "anatomy_pass": 0.834,
+  "ood_rate": 0.492,
+  "defect_rate": 0.546,
+  "kid_x1e3": 24.455223232507706,
+  "kid_std_x1e3": 1.71899632550776,
+  "diversity": 0.18197596073150635,
+  "diversity_real": 0.3236173391342163,
+  "nn_dist_median": 0.0522824227809906
+ },
+ "Enlarged Cardiomediastinum": {
+  "n": 500,
+  "requested_finding_rate": 0.758,
+  "eval_real_recall": 0.4,
+  "normalised_cond": 1.895,
+  "cond_auroc": 0.9246553152323976,
+  "xrv_prob_gen": 0.5177152156829834,
+  "xrv_prob_real": 0.4770491421222687,
+  "xrv_prob_real_other": 0.5024791955947876,
+  "anatomy_pass": 0.952,
+  "ood_rate": 0.326,
+  "defect_rate": 0.348,
+  "kid_x1e3": 10.360699146986008,
+  "kid_std_x1e3": 0.8889007731340826,
+  "diversity": 0.2197522521018982,
+  "diversity_real": 0.34775179624557495,
+  "nn_dist_median": 0.08567404747009277
+ },
+ "Lung Lesion": {
+  "n": 500,
+  "requested_finding_rate": 0.448,
+  "eval_real_recall": 0.2,
+  "normalised_cond": 2.2399999999999998,
+  "cond_auroc": 0.8525623561895996,
+  "xrv_prob_gen": 0.5320255160331726,
+  "xrv_prob_real": 0.5298824906349182,
+  "xrv_prob_real_other": 0.47983118891716003,
+  "anatomy_pass": 0.934,
+  "ood_rate": 0.094,
+  "defect_rate": 0.14,
+  "kid_x1e3": 3.6452962085604668,
+  "kid_std_x1e3": 0.33742724917829037,
+  "diversity": 0.2516554594039917,
+  "diversity_real": 0.3484742045402527,
+  "nn_dist_median": 0.08291751146316528
+ },
+ "Pneumonia": {
+  "n": 500,
+  "requested_finding_rate": 0.118,
+  "eval_real_recall": 0.2,
+  "normalised_cond": 0.59,
+  "cond_auroc": 0.620966405890474,
+  "xrv_prob_gen": 0.4520377218723297,
+  "xrv_prob_real": 0.47010764479637146,
+  "xrv_prob_real_other": 0.3832300305366516,
+  "anatomy_pass": 0.758,
+  "ood_rate": 0.196,
+  "defect_rate": 0.368,
+  "kid_x1e3": 7.920370437204838,
+  "kid_std_x1e3": 0.6857976550236344,
+  "diversity": 0.26177525520324707,
+  "diversity_real": 0.371387779712677,
+  "nn_dist_median": 0.10455062985420227
+ },
+ "Pleural Other": {
+  "n": 500,
+  "requested_finding_rate": 0.674,
+  "eval_real_recall": 0.3,
+  "normalised_cond": 2.246666666666667,
+  "cond_auroc": 0.8041196502531063,
+  "anatomy_pass": 0.888,
+  "ood_rate": 0.198,
+  "defect_rate": 0.276,
+  "kid_x1e3": 13.157825917005539,
+  "kid_std_x1e3": 0.4858603933826089,
+  "diversity": 0.2158452868461609,
+  "diversity_real": 0.3388221859931946,
+  "nn_dist_median": 0.09057825803756714
+ },
+ "Fracture": {
+  "n": 173,
+  "requested_finding_rate": 0.3063583815028902,
+  "eval_real_recall": 0.32,
+  "normalised_cond": 0.9573699421965318,
+  "cond_auroc": 0.8138589595375723,
+  "xrv_prob_gen": 0.4140046536922455,
+  "xrv_prob_real": 0.41081783175468445,
+  "xrv_prob_real_other": 0.4054493010044098,
+  "anatomy_pass": 0.930635838150289,
+  "ood_rate": 0.12138728323699421,
+  "defect_rate": 0.16184971098265896,
+  "kid_x1e3": 6.02692598477006,
+  "kid_std_x1e3": 0.7802186883054674,
+  "diversity": 0.21008074283599854,
+  "diversity_real": 0.31618350744247437,
+  "nn_dist_median": 0.058788299560546875
+ },
+ "MEAN(targets)": {
+  "requested_finding_rate": 0.46087167630057796,
+  "eval_real_recall": 0.28400000000000003,
+  "normalised_cond": 1.5858073217726396,
+  "cond_auroc": 0.8032325374206302,
+  "anatomy_pass": 0.8925271676300579,
+  "ood_rate": 0.18707745664739886,
+  "defect_rate": 0.2587699421965318,
+  "kid_x1e3": 8.222223538905382,
+  "kid_std_x1e3": 0.6356409518048167,
+  "diversity": 0.23182179927825927,
+  "diversity_real": 0.3445238947868347,
+  "nn_dist_median": 0.08450174927711487
+ },
+ "confusion_matrix": {
+  "rows_prompted": [
+   "No Finding",
+   "Enlarged Cardiomediastinum",
+   "Lung Lesion",
+   "Pneumonia",
+   "Pleural Other",
+   "Fracture"
+  ],
+  "matrix": [
+   [
+    389,
+    26,
+    25,
+    25,
+    14,
+    21
+   ],
+   [
+    53,
+    379,
+    10,
+    5,
+    25,
+    28
+   ],
+   [
+    39,
+    33,
+    224,
+    80,
+    107,
+    17
+   ],
+   [
+    8,
+    82,
+    83,
+    59,
+    230,
+    38
+   ],
+   [
+    25,
+    33,
+    22,
+    68,
+    337,
+    15
+   ],
+   [
+    33,
+    38,
+    16,
+    4,
+    29,
+    53
+   ]
+  ]
+ }
+}

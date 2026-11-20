@@ -1,0 +1,301 @@
+"""LoRA fine-tuning of P-Rajiv / PRISM with a classifier (CE) loss and an adversarial (GAN) loss.
+
+    L_G = L_diff                                          (original epsilon-MSE on real CheXpert images)
+        + lam_cls * CE( h_cls(phi(x0_gen)), y_prompt )    (frozen classifier: "shows the requested finding")
+        + lam_adv * ( -D(phi(x0_gen), y_prompt) )         (discriminator: "looks like a real CXR of class y")
+
+    L_D = relu(1 - D(phi(x0_real_t), y_real)) + relu(1 + D(phi(x0_gen), y_prompt))     (hinge)
+
+phi    = frozen TorchXRayVision DenseNet121 ("all" weights) -- the evaluation uses a DIFFERENT backbone (mimic_ch)
+x0_gen = ReFL-style one-step clean estimate: sample from pure noise with DDIM (no grad) down to a random
+         late timestep t <= t_max, then ONE UNet step with grad -> x0 prediction -> VAE decode
+x0_real_t = the same one-step estimate on a REAL image noised to the same t (t-matched reference, so the
+         discriminator cannot just detect one-step blur)
+
+Set --lam_cls 0 --lam_adv 0 for the control run (same extra training, same caption dropout, no new losses).
+"""
+import os, sys, json, math, time, argparse, random
+import numpy as np
+import pandas as pd
+import torch
+import torch.nn.functional as F
+from torch.utils.data import Dataset, DataLoader, WeightedRandomSampler
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from cxr_common import *  # noqa
+from sd_utils import load_sd, attach_lora, encode_prompts, init_latents, cfg_eps, sample
+
+
+def parse():
+    p = argparse.ArgumentParser()
+    p.add_argument("--model_type", default="prajiv", choices=["prajiv", "prism"])
+    p.add_argument("--prism_weights", default=None)
+    p.add_argument("--init_lora", default=os.path.join(CODE_DIR, "cxr_diffusion_checkpoints/prajiv/unet_clip/epoch_2"),
+                   help="start from the existing LoRA ('' = fresh LoRA)")
+    p.add_argument("--lora_mode", default="unet_clip", choices=["unet", "unet_clip"])
+    p.add_argument("--out", required=True)
+    p.add_argument("--max_steps", type=int, default=2000)
+    p.add_argument("--batch_size", type=int, default=4)
+    p.add_argument("--reward_bs", type=int, default=2)
+    p.add_argument("--reward_every", type=int, default=2)
+    p.add_argument("--lr", type=float, default=2e-5)
+    p.add_argument("--d_lr", type=float, default=2e-4)
+    p.add_argument("--lam_cls", type=float, default=0.1)
+    p.add_argument("--lam_adv", type=float, default=0.05)
+    p.add_argument("--d_warmup", type=int, default=200, help="steps where only D learns (no adv grad to G)")
+    p.add_argument("--caption_dropout", type=float, default=0.1)
+    p.add_argument("--cfg", type=float, default=7.5)
+    p.add_argument("--ddim_steps", type=int, default=20)
+    p.add_argument("--t_max", type=int, default=400)
+    p.add_argument("--t_min", type=int, default=50)
+    p.add_argument("--eval_every", type=int, default=500)
+    p.add_argument("--eval_per_class", type=int, default=24)
+    p.add_argument("--seed", type=int, default=0)
+    p.add_argument("--cls_loss", default="ce", choices=["ce", "margin"],
+                   help="ce: maximise classifier confidence | margin: matched-confidence 'useful sample' loss "
+                        "max(0, m_y - (z_y - max_{k!=y} z_k)), m_y = median margin of correctly-classified REAL "
+                        "images of class y (stop pushing once as recognisable as a typical real image)")
+    return p.parse_args()
+
+
+@torch.no_grad()
+def real_margins(ds, phi, h_cls, dev, n_per_class=150):
+    """Median logit margin of correctly-classified real training images, per class (target for --cls_loss margin)."""
+    m = torch.zeros(len(CLASSES))
+    for ci, c in enumerate(CLASSES):
+        idx = ds.df.index[ds.df.label == c].tolist()[:n_per_class]
+        x = torch.stack([load_image_tensor(os.path.join(DATA_DIR, ds.df.Path[i])) for i in idx]).to(dev)
+        z = torch.cat([h_cls(backbone_features(phi, to_xrv(x[j:j + 32]))) for j in range(0, len(x), 32)])
+        other = z.clone(); other[:, ci] = -1e9
+        marg = z[:, ci] - other.max(1).values
+        m[ci] = marg[marg > 0].median() if (marg > 0).any() else 0.5
+    return m.to(dev)
+
+
+class DiffDS(Dataset):
+    def __init__(self, csv, dropout):
+        df = pd.read_csv(csv)
+        df["label"] = df.apply(label_of_row, axis=1)
+        self.df = df[df.label.notna()].reset_index(drop=True)
+        self.dropout = dropout
+
+    def __len__(self):
+        return len(self.df)
+
+    def __getitem__(self, i):
+        r = self.df.iloc[i]
+        y = CLASS_TO_IDX[r.label]
+        prompt = "" if random.random() < self.dropout else prompt_for(r.label)
+        return load_image_tensor(os.path.join(DATA_DIR, r.Path)), y, prompt
+
+
+def collate(b):
+    return torch.stack([x[0] for x in b]), torch.tensor([x[1] for x in b]), [x[2] for x in b]
+
+
+def balanced_loader(ds, bs):
+    # identical to the original get_balanced_dataloader (inverse class frequency)
+    counts = ds.df.label.value_counts().to_dict()
+    w = ds.df.label.map(lambda c: 1.0 / counts[c]).values
+    sampler = WeightedRandomSampler(torch.DoubleTensor(w), num_samples=len(ds), replacement=True)
+    return DataLoader(ds, batch_size=bs, sampler=sampler, num_workers=6, collate_fn=collate, drop_last=True,
+                      persistent_workers=True)
+
+
+# ---------------------------------------------------------------------------
+class Evaluator:
+    """Fixed seed grid -> held-out metrics used for CHECKPOINT SELECTION (not the training loss curve)."""
+    def __init__(self, device, per_class):
+        self.bb = load_backbone(EVAL_BACKBONE, device)
+        self.head = load_linear_head(os.path.join(HEADS_DIR, "eval_head.pt"), device)
+        o = torch.load(os.path.join(HEADS_DIR, "ood_stats.pt"))
+        self.mean, self.prec, self.thr = o["mean"].float().to(device), o["prec"].float().to(device), o["thr"]
+        self.anat = AnatomyChecker(device, json.load(open(os.path.join(HEADS_DIR, "anatomy.json"))))
+        self.per_class = per_class
+        self.device = device
+
+    @torch.no_grad()
+    def __call__(self, pipe, ddim, steps=25, cfg=7.5):
+        res = {}
+        for ci, c in enumerate(CLASSES):
+            seeds = [100000 * (ci + 1) + i for i in range(self.per_class)]  # fixed across checkpoints
+            imgs = []
+            for s in range(0, len(seeds), 12):
+                sl = seeds[s:s + 12]
+                imgs.append(sample(pipe, ddim, [prompt_for(c)] * len(sl), sl, steps, cfg, return_tensor=True))
+            img = torch.cat(imgs)
+            f = backbone_features(self.bb, to_xrv(img))
+            pred = self.head(f).argmax(1)
+            d = f - self.mean
+            ood = torch.sqrt(((d @ self.prec) * d).sum(1)) > self.thr
+            anat_ok = self.anat.passes(self.anat.measure(img))
+            res[c] = {"cond_acc": pred.eq(ci).float().mean().item(), "ood_rate": ood.float().mean().item(),
+                      "anatomy_pass": float(anat_ok.mean()),
+                      "defect_rate": float((~anat_ok | ood.cpu().numpy()).mean())}
+        tg = [res[c] for c in TARGET_CLASSES]
+        res["mean_target"] = {k: float(np.mean([r[k] for r in tg])) for k in tg[0]}
+        return res
+
+
+def save_lora(pipe, d, lora_mode):
+    os.makedirs(d, exist_ok=True)
+    pipe.unet.save_pretrained(os.path.join(d, "unet_lora"))
+    if lora_mode == "unet_clip":
+        pipe.text_encoder.save_pretrained(os.path.join(d, "text_encoder_lora"))
+
+
+def main():
+    a = parse()
+    torch.manual_seed(a.seed); random.seed(a.seed); np.random.seed(a.seed)
+    dev = "cuda"
+    os.makedirs(a.out, exist_ok=True)
+    json.dump(vars(a), open(os.path.join(a.out, "config.json"), "w"), indent=1)
+
+    pipe, ddim, ddpm = load_sd(a.model_type, a.prism_weights, device=dev)
+    pipe = attach_lora(pipe, a.init_lora or None, a.lora_mode, trainable=True)
+    unet, te, vae = pipe.unet, pipe.text_encoder, pipe.vae
+    vae.enable_gradient_checkpointing() if hasattr(vae, "enable_gradient_checkpointing") else None
+    lora_params = [p for m in (unet, te) for p in m.parameters() if p.requires_grad]
+    print("trainable LoRA params:", sum(p.numel() for p in lora_params))
+    opt = torch.optim.AdamW(lora_params, lr=a.lr, weight_decay=1e-2)
+
+    use_reward = a.lam_cls > 0 or a.lam_adv > 0
+    if use_reward:
+        phi = load_backbone(REWARD_BACKBONE, dev)
+        h_cls = load_linear_head(os.path.join(HEADS_DIR, "reward_head.pt"), dev)
+        D = ProjectionDiscriminatorHead().to(dev)
+        st = torch.load(os.path.join(HEADS_DIR, "feat_stats.pt"))
+        D.mu.copy_(st["mu"]); D.sd.copy_(st["sd"])
+        opt_d = torch.optim.Adam(D.parameters(), lr=a.d_lr, betas=(0.0, 0.99))
+    evaluator = Evaluator(dev, a.eval_per_class)
+
+    ds = DiffDS(CSV_DIFF, a.caption_dropout)
+    dl = balanced_loader(ds, a.batch_size)
+    if use_reward and a.cls_loss == "margin":
+        m_target = real_margins(ds, phi, h_cls, dev)
+        print("matched-confidence margins (real images):", dict(zip(CLASSES, m_target.tolist())), flush=True)
+        json.dump(dict(zip(CLASSES, m_target.tolist())), open(os.path.join(a.out, "real_margins.json"), "w"))
+    ac = ddpm.alphas_cumprod.to(dev)
+    sf = vae.config.scaling_factor
+    log_f = open(os.path.join(a.out, "train_log.jsonl"), "a")
+    eval_log = []
+
+    def run_eval(step):
+        unet.eval(); te.eval()
+        r = evaluator(pipe, ddim)
+        r["step"] = step
+        eval_log.append(r)
+        json.dump(eval_log, open(os.path.join(a.out, "eval_log.json"), "w"), indent=1)
+        save_lora(pipe, os.path.join(a.out, f"step_{step}"), a.lora_mode)
+        m = r["mean_target"]
+        print(f"[eval step {step}] cond_acc={m['cond_acc']:.3f} defect={m['defect_rate']:.3f} "
+              f"anat={m['anatomy_pass']:.3f} ood={m['ood_rate']:.3f}", flush=True)
+        unet.train(); te.train()
+
+    run_eval(0)
+    step, t0 = 0, time.time()
+    it = iter(dl)
+    while step < a.max_steps:
+        try:
+            x, y, prompts = next(it)
+        except StopIteration:
+            it = iter(dl); x, y, prompts = next(it)
+        x, y = x.to(dev), y.to(dev)
+        unet.train(); te.train()
+        logs = {"step": step + 1}
+
+        # ---------------- 1. standard diffusion loss (unchanged from train_combined.py) ----------------
+        with torch.autocast("cuda", dtype=torch.bfloat16):
+            with torch.no_grad():
+                lat = vae.encode(x.to(vae.dtype)).latent_dist.sample() * sf
+            emb = encode_prompts(pipe, prompts, dev)
+            noise = torch.randn_like(lat)
+            t = torch.randint(0, ddpm.config.num_train_timesteps, (lat.shape[0],), device=dev)
+            eps = unet(ddpm.add_noise(lat, noise, t), t, encoder_hidden_states=emb).sample
+        l_diff = F.mse_loss(eps.float(), noise.float())
+        l_diff.backward()
+        logs["l_diff"] = l_diff.item()
+
+        # ---------------- 2. reward step: CE + adversarial on one-step x0 of the model's OWN samples ----
+        if use_reward and step % a.reward_every == 0:
+            B = a.reward_bs
+            y_gen = torch.randint(0, len(CLASSES), (B,), device=dev)
+            gen_prompts = [prompt_for(CLASSES[i]) for i in y_gen.tolist()]
+            ddim.set_timesteps(a.ddim_steps, device=dev)
+            ts = ddim.timesteps
+            cand = [i for i, tt in enumerate(ts.tolist()) if a.t_min <= tt <= a.t_max]
+            k = random.choice(cand)
+            with torch.autocast("cuda", dtype=torch.bfloat16):
+                with torch.no_grad():
+                    cond_ng = encode_prompts(pipe, gen_prompts, dev)
+                    uncond = encode_prompts(pipe, [""] * B, dev)
+                    z = torch.randn(B, 4, 64, 64, device=dev)
+                    for i in range(k):
+                        e = cfg_eps(unet, z, ts[i], cond_ng, uncond, a.cfg)
+                        z = ddim.step(e.float(), ts[i], z.float()).prev_sample
+                tk = ts[k]
+                cond = encode_prompts(pipe, gen_prompts, dev)              # grad -> text-encoder LoRA
+                e = cfg_eps(unet, z, tk, cond, uncond, a.cfg)              # ONE step with grad
+                abar = ac[tk]
+                x0_lat = (z.float() - (1 - abar).sqrt() * e.float()) / abar.sqrt()
+                img_gen = vae.decode((x0_lat / sf).to(vae.dtype)).sample.float().clamp(-1, 1)
+                f_gen = backbone_features(phi, to_xrv(img_gen))
+
+                # t-matched real reference (no grad)
+                with torch.no_grad():
+                    lat_r, y_r = lat[:B], y[:B]
+                    tr = torch.full((B,), int(tk), device=dev, dtype=torch.long)
+                    zr = ddpm.add_noise(lat_r, torch.randn_like(lat_r), tr)
+                    cr = encode_prompts(pipe, [prompt_for(CLASSES[i]) for i in y_r.tolist()], dev)
+                    er = cfg_eps(unet, zr, tk, cr, uncond, a.cfg)
+                    x0r = (zr.float() - (1 - abar).sqrt() * er.float()) / abar.sqrt()
+                    img_real = vae.decode((x0r / sf).to(vae.dtype)).sample.float().clamp(-1, 1)
+                    f_real = backbone_features(phi, to_xrv(img_real))
+
+            # --- discriminator update
+            if a.lam_adv > 0:
+                d_real = D(f_real.float(), y_r)
+                d_fake = D(f_gen.detach().float(), y_gen)
+                l_d = F.relu(1 - d_real).mean() + F.relu(1 + d_fake).mean()
+                opt_d.zero_grad(set_to_none=True); l_d.backward(); opt_d.step()
+                logs.update(l_D=l_d.item(), D_real=d_real.mean().item(), D_fake=d_fake.mean().item())
+
+            # --- generator (LoRA) reward losses
+            l_g = torch.zeros((), device=dev)
+            logits = h_cls(f_gen.float())
+            if a.cls_loss == "margin":
+                other = logits.masked_fill(F.one_hot(y_gen, len(CLASSES)).bool(), -1e9)
+                margin = logits.gather(1, y_gen[:, None]).squeeze(1) - other.max(1).values
+                l_cls = F.relu(m_target[y_gen] - margin).mean()
+            else:
+                l_cls = F.cross_entropy(logits, y_gen)
+            logs.update(l_cls=l_cls.item(), gen_acc=logits.argmax(1).eq(y_gen).float().mean().item(), t_k=int(tk))
+            if a.lam_cls > 0:
+                l_g = l_g + a.lam_cls * l_cls
+            if a.lam_adv > 0 and step >= a.d_warmup:
+                l_adv = -D(f_gen.float(), y_gen).mean()
+                l_g = l_g + a.lam_adv * l_adv
+                logs["l_adv"] = l_adv.item()
+            if l_g.requires_grad:
+                l_g.backward()
+
+        torch.nn.utils.clip_grad_norm_(lora_params, 1.0)
+        opt.step(); opt.zero_grad(set_to_none=True)
+        step += 1
+        logs["sec"] = round(time.time() - t0, 1)
+        log_f.write(json.dumps(logs) + "\n")
+        if step % 25 == 0:
+            log_f.flush()
+            print(" ".join(f"{k}={v:.4f}" if isinstance(v, float) else f"{k}={v}" for k, v in logs.items()), flush=True)
+        if step % a.eval_every == 0 or step == a.max_steps:
+            run_eval(step)
+
+    # choose the checkpoint by held-out metrics: maximise cond_acc - defect_rate on the 5 target classes
+    best = max(eval_log, key=lambda r: r["mean_target"]["cond_acc"] - r["mean_target"]["defect_rate"])
+    json.dump({"best_step": best["step"], "metrics": best["mean_target"]},
+              open(os.path.join(a.out, "best.json"), "w"), indent=1)
+    print("BEST checkpoint:", best["step"], best["mean_target"])
+
+
+if __name__ == "__main__":
+    main()

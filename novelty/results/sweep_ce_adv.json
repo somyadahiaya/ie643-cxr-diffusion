@@ -1,0 +1,254 @@
+{
+ "cfg7.5_lora1.0": {
+  "cfg": 7.5,
+  "lora_scale": 1.0,
+  "mean": {
+   "requested_finding_rate": 0.47000000774860384,
+   "defect_rate": 0.28,
+   "kid_x1e3": 8.430653577670455,
+   "diversity": 0.236699378490448
+  },
+  "per_class": {
+   "Enlarged Cardiomediastinum": {
+    "requested_finding_rate": 0.675000011920929,
+    "defect_rate": 0.3,
+    "kid_x1e3": 10.339522734284401,
+    "diversity": 0.21679484844207764
+   },
+   "Lung Lesion": {
+    "requested_finding_rate": 0.375,
+    "defect_rate": 0.125,
+    "kid_x1e3": 2.610754920169711,
+    "diversity": 0.2568478584289551
+   },
+   "Pneumonia": {
+    "requested_finding_rate": 0.17499999701976776,
+    "defect_rate": 0.45,
+    "kid_x1e3": 10.56015957146883,
+    "diversity": 0.23930788040161133
+   },
+   "Pleural Other": {
+    "requested_finding_rate": 0.6500000357627869,
+    "defect_rate": 0.35,
+    "kid_x1e3": 10.723548009991646,
+    "diversity": 0.2714231610298157
+   },
+   "Fracture": {
+    "requested_finding_rate": 0.4749999940395355,
+    "defect_rate": 0.175,
+    "kid_x1e3": 7.919282652437687,
+    "diversity": 0.19912314414978027
+   }
+  }
+ },
+ "cfg7.5_lora0.75": {
+  "cfg": 7.5,
+  "lora_scale": 0.75,
+  "mean": {
+   "requested_finding_rate": 0.43500001430511476,
+   "defect_rate": 0.19,
+   "kid_x1e3": 5.233800038695335,
+   "diversity": 0.2548880219459534
+  },
+  "per_class": {
+   "Enlarged Cardiomediastinum": {
+    "requested_finding_rate": 0.6000000238418579,
+    "defect_rate": 0.125,
+    "kid_x1e3": 4.805922508239746,
+    "diversity": 0.22103679180145264
+   },
+   "Lung Lesion": {
+    "requested_finding_rate": 0.25,
+    "defect_rate": 0.1,
+    "kid_x1e3": 4.066281486302614,
+    "diversity": 0.24748188257217407
+   },
+   "Pneumonia": {
+    "requested_finding_rate": 0.2750000059604645,
+    "defect_rate": 0.275,
+    "kid_x1e3": 3.1922245398163795,
+    "diversity": 0.3101421594619751
+   },
+   "Pleural Other": {
+    "requested_finding_rate": 0.7250000238418579,
+    "defect_rate": 0.3,
+    "kid_x1e3": 8.375749923288822,
+    "diversity": 0.26214951276779175
+   },
+   "Fracture": {
+    "requested_finding_rate": 0.32500001788139343,
+    "defect_rate": 0.15,
+    "kid_x1e3": 5.728821735829115,
+    "diversity": 0.2336297631263733
+   }
+  }
+ },
+ "cfg5.0_lora1.0": {
+  "cfg": 5.0,
+  "lora_scale": 1.0,
+  "mean": {
+   "requested_finding_rate": 0.4400000095367432,
+   "defect_rate": 0.28,
+   "kid_x1e3": 5.489420844241977,
+   "diversity": 0.2608153700828552
+  },
+  "per_class": {
+   "Enlarged Cardiomediastinum": {
+    "requested_finding_rate": 0.5,
+    "defect_rate": 0.25,
+    "kid_x1e3": 7.526278495788574,
+    "diversity": 0.23336273431777954
+   },
+   "Lung Lesion": {
+    "requested_finding_rate": 0.4000000059604645,
+    "defect_rate": 0.1,
+    "kid_x1e3": 1.5783023554831743,
+    "diversity": 0.2827731966972351
+   },
+   "Pneumonia": {
+    "requested_finding_rate": 0.3499999940395355,
+    "defect_rate": 0.525,
+    "kid_x1e3": 6.736159324645996,
+    "diversity": 0.2781810760498047
+   },
+   "Pleural Other": {
+    "requested_finding_rate": 0.6500000357627869,
+    "defect_rate": 0.35,
+    "kid_x1e3": 6.703338585793972,
+    "diversity": 0.279959499835968
+   },
+   "Fracture": {
+    "requested_finding_rate": 0.30000001192092896,
+    "defect_rate": 0.175,
+    "kid_x1e3": 4.903025459498167,
+    "diversity": 0.22980034351348877
+   }
+  }
+ },
+ "cfg5.0_lora0.75": {
+  "cfg": 5.0,
+  "lora_scale": 0.75,
+  "mean": {
+   "requested_finding_rate": 0.34500000476837156,
+   "defect_rate": 0.25,
+   "kid_x1e3": 3.1318798195570707,
+   "diversity": 0.2855910658836365
+  },
+  "per_class": {
+   "Enlarged Cardiomediastinum": {
+    "requested_finding_rate": 0.375,
+    "defect_rate": 0.25,
+    "kid_x1e3": 4.513812251389027,
+    "diversity": 0.2507537007331848
+   },
+   "Lung Lesion": {
+    "requested_finding_rate": 0.22500000894069672,
+    "defect_rate": 0.175,
+    "kid_x1e3": 2.1813393104821444,
+    "diversity": 0.2764291763305664
+   },
+   "Pneumonia": {
+    "requested_finding_rate": 0.375,
+    "defect_rate": 0.325,
+    "kid_x1e3": 2.9613112565129995,
+    "diversity": 0.31756365299224854
+   },
+   "Pleural Other": {
+    "requested_finding_rate": 0.550000011920929,
+    "defect_rate": 0.35,
+    "kid_x1e3": 3.2911491580307484,
+    "diversity": 0.3336309790611267
+   },
+   "Fracture": {
+    "requested_finding_rate": 0.20000000298023224,
+    "defect_rate": 0.15,
+    "kid_x1e3": 2.7117871213704348,
+    "diversity": 0.2495778203010559
+   }
+  }
+ },
+ "cfg4.0_lora1.0": {
+  "cfg": 4.0,
+  "lora_scale": 1.0,
+  "mean": {
+   "requested_finding_rate": 0.40500000715255735,
+   "defect_rate": 0.29500000000000004,
+   "kid_x1e3": 4.800312174484134,
+   "diversity": 0.27501559257507324
+  },
+  "per_class": {
+   "Enlarged Cardiomediastinum": {
+    "requested_finding_rate": 0.42500001192092896,
+    "defect_rate": 0.275,
+    "kid_x1e3": 8.203969337046146,
+    "diversity": 0.24391669034957886
+   },
+   "Lung Lesion": {
+    "requested_finding_rate": 0.30000001192092896,
+    "defect_rate": 0.1,
+    "kid_x1e3": 1.865496626123786,
+    "diversity": 0.299189031124115
+   },
+   "Pneumonia": {
+    "requested_finding_rate": 0.375,
+    "defect_rate": 0.5,
+    "kid_x1e3": 6.041660439223051,
+    "diversity": 0.29037922620773315
+   },
+   "Pleural Other": {
+    "requested_finding_rate": 0.625,
+    "defect_rate": 0.35,
+    "kid_x1e3": 4.6470882371068,
+    "diversity": 0.3053394556045532
+   },
+   "Fracture": {
+    "requested_finding_rate": 0.30000001192092896,
+    "defect_rate": 0.25,
+    "kid_x1e3": 3.243346232920885,
+    "diversity": 0.236253559589386
+   }
+  }
+ },
+ "cfg4.0_lora0.75": {
+  "cfg": 4.0,
+  "lora_scale": 0.75,
+  "mean": {
+   "requested_finding_rate": 0.31000000834465025,
+   "defect_rate": 0.26,
+   "kid_x1e3": 2.3415269795805216,
+   "diversity": 0.2997084021568298
+  },
+  "per_class": {
+   "Enlarged Cardiomediastinum": {
+    "requested_finding_rate": 0.3499999940395355,
+    "defect_rate": 0.225,
+    "kid_x1e3": 3.7216090131551027,
+    "diversity": 0.26845335960388184
+   },
+   "Lung Lesion": {
+    "requested_finding_rate": 0.20000000298023224,
+    "defect_rate": 0.15,
+    "kid_x1e3": 1.8657875480130315,
+    "diversity": 0.2792932987213135
+   },
+   "Pneumonia": {
+    "requested_finding_rate": 0.30000001192092896,
+    "defect_rate": 0.375,
+    "kid_x1e3": 3.1496190931648016,
+    "diversity": 0.3247816562652588
+   },
+   "Pleural Other": {
+    "requested_finding_rate": 0.5250000357627869,
+    "defect_rate": 0.325,
+    "kid_x1e3": 1.2111568357795477,
+    "diversity": 0.34953463077545166
+   },
+   "Fracture": {
+    "requested_finding_rate": 0.17499999701976776,
+    "defect_rate": 0.225,
+    "kid_x1e3": 1.7594624077901244,
+    "diversity": 0.2764790654182434
+   }
+  }
+ }
+}

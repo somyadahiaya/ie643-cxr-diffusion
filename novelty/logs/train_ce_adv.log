@@ -1,0 +1,92 @@
+/home/surajracha/pedal_for_healthcare/cs6101/Project_IE643/.venv311/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:00,  7.93it/s]Loading pipeline components...:  83%|████████▎ | 5/6 [00:00<00:00,  8.88it/s]
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 2035.71it/s]
+Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00,  7.35it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00,  7.68it/s]
+trainable LoRA params: 4368384
+[eval step 0] cond_acc=0.125 defect=0.442 anat=0.825 ood=0.425
+step=25 l_diff=0.1984 l_D=1.3526 D_real=0.0023 D_fake=-0.7672 l_cls=5.9152 gen_acc=0.0000 t_k=201 sec=91.1000
+step=50 l_diff=0.1050 sec=173.2000
+step=75 l_diff=0.0923 l_D=0.3799 D_real=1.0284 D_fake=-0.9031 l_cls=1.2152 gen_acc=0.5000 t_k=201 sec=258.5000
+step=100 l_diff=0.1945 sec=338.3000
+step=125 l_diff=0.1109 l_D=0.0307 D_real=1.9781 D_fake=-1.6105 l_cls=2.9301 gen_acc=0.0000 t_k=51 sec=424.6000
+step=150 l_diff=0.1033 sec=506.0000
+step=175 l_diff=0.1146 l_D=0.0000 D_real=2.1053 D_fake=-2.1494 l_cls=2.0709 gen_acc=0.0000 t_k=351 sec=589.7000
+step=200 l_diff=0.2569 sec=669.0000
+step=225 l_diff=0.2058 l_D=0.0000 D_real=2.4435 D_fake=-1.5353 l_cls=0.9714 gen_acc=0.5000 t_k=251 l_adv=1.5352 sec=754.5000
+step=250 l_diff=0.1802 sec=833.0000
+step=275 l_diff=0.1130 l_D=0.7313 D_real=2.1129 D_fake=-0.8093 l_cls=0.3816 gen_acc=1.0000 t_k=101 l_adv=1.4960 sec=917.7000
+step=300 l_diff=0.2022 sec=999.2000
+step=325 l_diff=0.0800 l_D=0.0755 D_real=1.4719 D_fake=-2.4927 l_cls=0.7175 gen_acc=1.0000 t_k=251 l_adv=3.3580 sec=1085.6000
+step=350 l_diff=0.0410 sec=1164.3000
+step=375 l_diff=0.0974 l_D=0.7443 D_real=1.5464 D_fake=-0.2557 l_cls=0.8395 gen_acc=0.5000 t_k=301 l_adv=1.7944 sec=1247.9000
+step=400 l_diff=0.0741 sec=1328.3000
+step=425 l_diff=0.1109 l_D=0.1384 D_real=1.9798 D_fake=-2.3493 l_cls=0.9386 gen_acc=0.5000 t_k=351 l_adv=2.9919 sec=1411.5000
+step=450 l_diff=0.2284 sec=1490.3000
+step=475 l_diff=0.2532 l_D=0.5826 D_real=0.6207 D_fake=-1.6512 l_cls=1.2232 gen_acc=0.5000 t_k=251 l_adv=1.6241 sec=1573.4000
+step=500 l_diff=0.1447 sec=1651.1000
+[eval step 500] cond_acc=0.317 defect=0.292 anat=0.850 ood=0.233
+step=525 l_diff=0.1146 l_D=2.2466 D_real=1.1372 D_fake=0.6096 l_cls=0.5070 gen_acc=1.0000 t_k=101 l_adv=0.2810 sec=2067.3000
+step=550 l_diff=0.1019 sec=2148.0000
+step=575 l_diff=0.1476 l_D=1.0778 D_real=0.3046 D_fake=-1.0205 l_cls=2.2975 gen_acc=0.0000 t_k=251 l_adv=1.2282 sec=2235.2000
+step=600 l_diff=0.0983 sec=2314.5000
+step=625 l_diff=0.1970 l_D=0.9277 D_real=0.5481 D_fake=-1.1249 l_cls=0.6888 gen_acc=1.0000 t_k=151 l_adv=1.4317 sec=2400.7000
+step=650 l_diff=0.2465 sec=2480.5000
+step=675 l_diff=0.1019 l_D=0.4658 D_real=1.8616 D_fake=-0.7096 l_cls=1.1326 gen_acc=0.0000 t_k=201 l_adv=1.2525 sec=2566.6000
+step=700 l_diff=0.3000 sec=2647.5000
+step=725 l_diff=0.0984 l_D=0.9114 D_real=1.0068 D_fake=-0.3044 l_cls=2.5007 gen_acc=0.5000 t_k=201 l_adv=0.9525 sec=2731.6000
+step=750 l_diff=0.1097 sec=2812.9000
+step=775 l_diff=0.1476 l_D=2.8206 D_real=-1.8206 D_fake=-2.5913 l_cls=1.1444 gen_acc=0.5000 t_k=101 l_adv=2.2795 sec=2896.5000
+step=800 l_diff=0.2179 sec=2976.6000
+step=825 l_diff=0.2434 l_D=1.0510 D_real=0.3933 D_fake=-0.5557 l_cls=0.2849 gen_acc=1.0000 t_k=251 l_adv=1.9303 sec=3061.2000
+step=850 l_diff=0.0149 sec=3144.0000
+step=875 l_diff=0.3078 l_D=0.9927 D_real=1.0490 D_fake=-0.0330 l_cls=1.2555 gen_acc=0.0000 t_k=151 l_adv=0.8778 sec=3227.3000
+step=900 l_diff=0.0326 sec=3309.5000
+step=925 l_diff=0.2763 l_D=0.7799 D_real=1.7598 D_fake=-0.5239 l_cls=2.2260 gen_acc=0.5000 t_k=351 l_adv=1.2669 sec=3394.6000
+step=950 l_diff=0.1385 sec=3474.1000
+step=975 l_diff=0.0881 l_D=0.0988 D_real=2.1152 D_fake=-1.1882 l_cls=0.0914 gen_acc=1.0000 t_k=351 l_adv=1.6956 sec=3556.1000
+step=1000 l_diff=0.1013 sec=3635.4000
+[eval step 1000] cond_acc=0.458 defect=0.267 anat=0.883 ood=0.225
+step=1025 l_diff=0.1999 l_D=0.7310 D_real=0.7171 D_fake=-0.9773 l_cls=1.6206 gen_acc=0.0000 t_k=51 l_adv=1.1009 sec=4053.5000
+step=1050 l_diff=0.1328 sec=4110.5000
+step=1075 l_diff=0.1201 l_D=0.6263 D_real=1.6134 D_fake=-0.6152 l_cls=0.1145 gen_acc=1.0000 t_k=101 l_adv=1.0990 sec=4149.2000
+step=1100 l_diff=0.0931 sec=4185.2000
+step=1125 l_diff=0.0606 l_D=2.2771 D_real=-0.8795 D_fake=-0.9426 l_cls=0.3274 gen_acc=1.0000 t_k=201 l_adv=1.2391 sec=4223.9000
+step=1150 l_diff=0.1106 sec=4260.8000
+step=1175 l_diff=0.0317 l_D=1.5453 D_real=-0.5453 D_fake=-1.8430 l_cls=0.0498 gen_acc=1.0000 t_k=301 l_adv=1.3317 sec=4299.2000
+step=1200 l_diff=0.0939 sec=4335.2000
+step=1225 l_diff=0.3816 l_D=1.2265 D_real=0.5515 D_fake=-1.2023 l_cls=0.5846 gen_acc=0.5000 t_k=101 l_adv=1.2873 sec=4375.0000
+step=1250 l_diff=0.0727 sec=4411.8000
+step=1275 l_diff=0.1880 l_D=2.1734 D_real=-1.0326 D_fake=-1.2357 l_cls=0.0933 gen_acc=1.0000 t_k=251 l_adv=1.6573 sec=4450.9000
+step=1300 l_diff=0.1474 sec=4487.5000
+step=1325 l_diff=0.0953 l_D=0.0200 D_real=2.3660 D_fake=-1.0632 l_cls=1.3367 gen_acc=0.0000 t_k=51 l_adv=1.4241 sec=4526.5000
+step=1350 l_diff=0.1507 sec=4563.3000
+step=1375 l_diff=0.0560 l_D=0.0503 D_real=1.1596 D_fake=-1.5101 l_cls=0.3650 gen_acc=1.0000 t_k=201 l_adv=1.1595 sec=4603.3000
+step=1400 l_diff=0.1034 sec=4641.0000
+step=1425 l_diff=0.3774 l_D=2.1574 D_real=1.1179 D_fake=0.9707 l_cls=1.2045 gen_acc=0.5000 t_k=251 l_adv=-0.4136 sec=4679.7000
+step=1450 l_diff=0.0252 sec=4716.4000
+step=1475 l_diff=0.1096 l_D=1.0514 D_real=1.1443 D_fake=-0.8034 l_cls=0.1996 gen_acc=1.0000 t_k=101 l_adv=1.1765 sec=4755.2000
+step=1500 l_diff=0.3068 sec=4791.7000
+[eval step 1500] cond_acc=0.408 defect=0.367 anat=0.900 ood=0.325
+step=1525 l_diff=0.0686 l_D=3.2822 D_real=-0.6613 D_fake=0.6208 l_cls=2.0663 gen_acc=0.5000 t_k=351 l_adv=0.2985 sec=4974.1000
+step=1550 l_diff=0.0834 sec=5011.1000
+step=1575 l_diff=0.2400 l_D=0.5790 D_real=0.5707 D_fake=-1.0895 l_cls=0.3437 gen_acc=1.0000 t_k=51 l_adv=1.4145 sec=5051.0000
+step=1600 l_diff=0.0526 sec=5088.7000
+step=1625 l_diff=0.0426 l_D=0.5367 D_real=0.7894 D_fake=-1.8996 l_cls=1.5143 gen_acc=0.5000 t_k=101 l_adv=1.6740 sec=5128.0000
+step=1650 l_diff=0.1537 sec=5163.8000
+step=1675 l_diff=0.1248 l_D=0.6573 D_real=0.6022 D_fake=-0.8968 l_cls=0.6105 gen_acc=1.0000 t_k=301 l_adv=1.6848 sec=5203.2000
+step=1700 l_diff=0.1120 sec=5239.1000
+step=1725 l_diff=0.2948 l_D=2.4113 D_real=1.1520 D_fake=1.0462 l_cls=2.6326 gen_acc=0.5000 t_k=351 l_adv=0.1046 sec=5277.8000
+step=1750 l_diff=0.3286 sec=5313.1000
+step=1775 l_diff=0.0821 l_D=1.4763 D_real=0.5965 D_fake=0.0728 l_cls=1.5200 gen_acc=0.0000 t_k=101 l_adv=0.4616 sec=5351.5000
+step=1800 l_diff=0.1152 sec=5387.2000
+step=1825 l_diff=0.0582 l_D=0.2088 D_real=1.8868 D_fake=-1.3048 l_cls=0.5059 gen_acc=1.0000 t_k=151 l_adv=1.0067 sec=5425.2000
+step=1850 l_diff=0.1963 sec=5461.0000
+step=1875 l_diff=0.1002 l_D=1.7545 D_real=1.6952 D_fake=0.5302 l_cls=0.9832 gen_acc=1.0000 t_k=101 l_adv=0.0603 sec=5499.5000
+step=1900 l_diff=0.0464 sec=5535.5000
+step=1925 l_diff=0.1520 l_D=2.5795 D_real=1.0825 D_fake=0.8082 l_cls=3.5766 gen_acc=0.5000 t_k=101 l_adv=-0.0684 sec=5574.2000
+step=1950 l_diff=0.2916 sec=5610.3000
+step=1975 l_diff=0.4211 l_D=2.5620 D_real=-0.7872 D_fake=-0.2252 l_cls=1.5499 gen_acc=0.5000 t_k=301 l_adv=0.7802 sec=5648.3000
+step=2000 l_diff=0.2219 sec=5684.8000
+[eval step 2000] cond_acc=0.425 defect=0.425 anat=0.867 ood=0.392
+BEST checkpoint: 1000 {'cond_acc': 0.458333346247673, 'ood_rate': 0.22500000298023223, 'anatomy_pass': 0.8833333333333334, 'defect_rate': 0.26666666666666666}

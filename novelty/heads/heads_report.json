@@ -1,0 +1,58 @@
+{
+ "reward": {
+  "C": 0.01,
+  "test_acc": 0.3566666666666667,
+  "test_balanced_acc": 0.3566666666666667,
+  "test_recall_per_class": {
+   "No Finding": 0.42,
+   "Enlarged Cardiomediastinum": 0.38,
+   "Lung Lesion": 0.36,
+   "Pneumonia": 0.32,
+   "Pleural Other": 0.24,
+   "Fracture": 0.42
+  }
+ },
+ "eval": {
+  "C": 0.01,
+  "test_acc": 0.2966666666666667,
+  "test_balanced_acc": 0.2966666666666667,
+  "test_recall_per_class": {
+   "No Finding": 0.36,
+   "Enlarged Cardiomediastinum": 0.4,
+   "Lung Lesion": 0.2,
+   "Pneumonia": 0.2,
+   "Pleural Other": 0.3,
+   "Fracture": 0.32
+  }
+ },
+ "ood": {
+  "threshold_95pct_real_val": 18.544950485229492,
+  "real_test_ood_rate": 0.016666666666666666
+ },
+ "anatomy": {
+  "thresholds": {
+   "areaL": [
+    0.0803326416015625,
+    0.24903701782226562
+   ],
+   "areaR": [
+    0.0946429443359375,
+    0.25056167602539064
+   ],
+   "heart_area": [
+    0.041347503662109375,
+    0.12840118408203124
+   ]
+  },
+  "real_val_pass_rate": 0.9450980392156862,
+  "real_test_pass_rate": 0.9566666666666667,
+  "real_test_pass_per_class": {
+   "No Finding": 0.94,
+   "Enlarged Cardiomediastinum": 0.94,
+   "Lung Lesion": 0.92,
+   "Pneumonia": 0.98,
+   "Pleural Other": 0.96,
+   "Fracture": 1.0
+  }
+ }
+}

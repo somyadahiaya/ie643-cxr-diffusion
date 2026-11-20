@@ -1,0 +1,766 @@
+Path,label
+CheXpert-v1.0-small/train/patient23638/study4/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient60683/study1/view2_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient07965/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient55922/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient19637/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient27559/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient27040/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient16860/study2/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient48130/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient04596/study3/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient48361/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient34459/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient06956/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient47586/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient04662/study2/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient27533/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient05316/study10/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient28347/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient03795/study1/view2_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient55865/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient13237/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient50621/study2/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient16574/study1/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient03519/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient20250/study8/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient00071/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient12040/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient56385/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient29644/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient22813/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient61325/study2/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient61662/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient32487/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient33947/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient26549/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient03747/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient47941/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient10950/study8/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient04522/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient05094/study3/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient28307/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient00208/study4/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient62180/study2/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient04721/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient56251/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient32900/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient62519/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient05175/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient08634/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient23920/study5/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient24064/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient08999/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient06142/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient05324/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient02857/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient22922/study1/view2_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient23638/study3/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient32772/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient18603/study2/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient22840/study2/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient08640/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient00331/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient18645/study6/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient27434/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient06141/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient19433/study3/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient39634/study2/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient38072/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient55685/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient04104/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient10001/study3/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient33981/study4/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient17403/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient03291/study3/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient34211/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient19432/study3/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient10801/study7/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient22723/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient22902/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient27947/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient22443/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient06831/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient23417/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient08458/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient44503/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient55582/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient55922/study1/view2_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient11666/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient47782/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient14931/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient25701/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient04220/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient41907/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient46648/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient42898/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient44969/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient07536/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient07172/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient05767/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient23675/study8/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient64184/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient59681/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient16654/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient38427/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient11415/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient01439/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient00467/study28/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient22959/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient29996/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient39634/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient21566/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient41235/study15/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient62294/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient02888/study2/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient09284/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient16860/study3/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient05341/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient40773/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient31319/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient44462/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient07628/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient29673/study2/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient26387/study1/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient29560/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient15651/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient14683/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient03155/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient02888/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient18414/study2/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient23345/study1/view2_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient36495/study5/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient06037/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient35979/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient09968/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient17271/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient05203/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient38121/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient17211/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient12572/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient45602/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient12196/study1/view2_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient12196/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient29053/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient09221/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient20264/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient07022/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient19464/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient27931/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient27257/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient25643/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient20846/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient09895/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient01971/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient17535/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient22215/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient06539/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient14537/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient31037/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient60317/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient22762/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient36359/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient26807/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient24008/study10/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient60683/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient11226/study3/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient41927/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient07866/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient59519/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient01761/study1/view2_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient27185/study4/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient51775/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient34199/study9/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient42464/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient14770/study3/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient11406/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient00760/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient24492/study9/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient05054/study2/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient03836/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient55262/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient13809/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient16430/study2/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient08465/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient31250/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient32751/study5/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient47588/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient41437/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient23219/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient43493/study2/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient30587/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient17598/study1/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient37521/study7/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient01765/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient06354/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient04323/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient60041/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient26988/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient37216/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient26337/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient13971/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient20332/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient12373/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient04115/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient16430/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient09512/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient21199/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient09899/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient47783/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient34011/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient33069/study2/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient08357/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient23944/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient54441/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient14176/study4/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient12154/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient08545/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient24613/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient28070/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient08915/study6/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient33906/study4/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient54349/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient02058/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient08902/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient17287/study3/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient17211/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient38850/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient21890/study3/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient14121/study2/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient20653/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient06085/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient17073/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient11428/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient43631/study2/view2_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient22710/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient11229/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient54543/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient00004/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient64493/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient26208/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient09174/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient29210/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient18875/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient09268/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient04828/study2/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient32768/study1/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient14299/study3/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient29297/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient11077/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient50011/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient10155/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient20650/study3/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient40378/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient32290/study2/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient34730/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient30948/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient23788/study3/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient00208/study4/view2_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient34120/study3/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient22922/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient58214/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient54362/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient30067/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient03795/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient32674/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient17287/study2/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient27911/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient34331/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient17690/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient17944/study3/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient63892/study1/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient40616/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient31866/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient22617/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient22987/study1/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient15727/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient07583/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient16623/study1/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient48035/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient32891/study6/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient14275/study6/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient55785/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient60118/study1/view2_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient22398/study1/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient00419/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient17499/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient05575/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient56951/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient48201/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient59513/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient26963/study4/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient06044/study2/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient20176/study21/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient11376/study2/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient09039/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient60878/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient42726/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient22735/study5/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient05065/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient00486/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient28713/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient34583/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient16474/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient32934/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient46505/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient19462/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient30824/study3/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient62810/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient28964/study2/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient19859/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient34928/study5/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient22934/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient62008/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient13093/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient10970/study18/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient55525/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient12497/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient06368/study1/view2_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient52356/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient05282/study2/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient20056/study2/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient20542/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient14843/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient24403/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient19284/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient51136/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient30377/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient19911/study10/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient08388/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient23494/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient20176/study20/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient42921/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient52053/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient32823/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient43111/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient32381/study5/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient09832/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient24081/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient17274/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient08192/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient43154/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient47691/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient04835/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient29269/study2/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient16100/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient04431/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient13652/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient19425/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient06219/study2/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient07898/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient14520/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient27691/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient17896/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient16484/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient49075/study2/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient03130/study2/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient02171/study1/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient12713/study12/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient07961/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient43023/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient05157/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient24059/study1/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient60404/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient18486/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient54488/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient38667/study2/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient11805/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient08098/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient38444/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient29397/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient10377/study1/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient22168/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient40401/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient13549/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient02857/study3/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient08975/study15/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient32092/study3/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient33314/study2/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient32868/study1/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient49079/study4/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient27303/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient58530/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient59792/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient06368/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient17161/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient03284/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient17536/study3/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient05308/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient27647/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient32511/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient16821/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient25273/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient28827/study1/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient13086/study4/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient20881/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient47300/study3/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient54386/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient18142/study2/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient59284/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient14369/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient04768/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient08417/study4/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient17864/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient52744/study2/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient39455/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient06567/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient40976/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient21718/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient18608/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient31637/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient09096/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient29311/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient22524/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient23249/study4/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient02420/study3/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient05094/study11/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient39623/study3/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient08191/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient42182/study3/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient27897/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient14770/study3/view2_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient14717/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient02550/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient08620/study4/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient01761/study1/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient52506/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient16904/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient02741/study7/view2_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient04543/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient26109/study1/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient42363/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient04731/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient15971/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient06117/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient10312/study2/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient33792/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient15978/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient10010/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient60118/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient36755/study2/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient08730/study2/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient56159/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient24174/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient19731/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient37333/study15/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient06005/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient14846/study3/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient06263/study2/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient43960/study5/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient03262/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient18959/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient16460/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient23124/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient51995/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient37898/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient34146/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient10423/study2/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient11039/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient08024/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient01707/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient02226/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient55648/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient10970/study17/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient46218/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient21751/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient09993/study2/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient20477/study7/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient05923/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient07744/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient00826/study25/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient19938/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient09693/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient59925/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient32690/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient35714/study6/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient21927/study2/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient55140/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient38145/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient14717/study2/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient29347/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient14617/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient17847/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient03495/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient62710/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient20302/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient07430/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient06444/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient21277/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient06880/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient60342/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient49449/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient15668/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient06085/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient05222/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient53935/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient15635/study4/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient33959/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient25063/study10/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient13892/study7/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient21070/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient13419/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient06184/study3/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient50658/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient04828/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient24541/study6/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient38924/study3/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient32435/study2/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient31939/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient22312/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient42097/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient22004/study1/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient17072/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient12543/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient14370/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient49703/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient24964/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient34954/study3/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient00158/study1/view2_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient25536/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient18935/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient02702/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient06583/study3/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient03484/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient11586/study2/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient42802/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient05878/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient54290/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient11548/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient16586/study3/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient52192/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient30617/study3/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient14188/study1/view2_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient00774/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient16551/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient33624/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient05811/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient42547/study4/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient47668/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient28680/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient20157/study3/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient34583/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient20759/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient05906/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient00158/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient00702/study3/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient24890/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient35580/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient02741/study7/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient15635/study6/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient19750/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient30620/study5/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient54386/study2/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient17559/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient57109/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient01210/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient24541/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient31128/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient32447/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient28321/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient03554/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient26052/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient08276/study3/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient08253/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient03405/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient07368/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient22205/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient13452/study2/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient12210/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient30988/study5/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient35399/study4/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient36060/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient64089/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient31484/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient29579/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient08170/study2/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient49278/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient22449/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient20578/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient12646/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient02914/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient18021/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient46580/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient54299/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient06494/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient61333/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient50277/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient14188/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient48690/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient04997/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient18645/study2/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient29138/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient16293/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient25566/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient36827/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient17390/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient43300/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient33931/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient33730/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient23638/study2/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient06260/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient56484/study2/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient16905/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient18092/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient23210/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient44469/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient47027/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient32574/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient63264/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient52846/study2/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient46172/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient12223/study10/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient10773/study3/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient31671/study2/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient50859/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient25211/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient19816/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient20250/study6/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient25522/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient63354/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient29673/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient07968/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient00349/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient07320/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient29797/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient52842/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient35965/study4/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient08045/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient06831/study2/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient19689/study46/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient35210/study7/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient16238/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient52268/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient33699/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient62180/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient29697/study1/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient07033/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient55655/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient30161/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient32578/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient14770/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient19633/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient20657/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient43794/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient06109/study4/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient12710/study7/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient50073/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient00855/study1/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient23345/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient05667/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient18823/study9/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient15203/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient33802/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient12976/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient29498/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient14867/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient32559/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient33254/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient58015/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient64019/study2/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient43631/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient15194/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient07392/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient20846/study3/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient10801/study8/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient34171/study1/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient25687/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient04166/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient03585/study8/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient10841/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient03124/study4/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient15339/study6/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient20949/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient47556/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient21472/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient18046/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient45500/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient05163/study3/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient38142/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient26559/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient24276/study7/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient47934/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient58226/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient55858/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient11494/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient09979/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient53986/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient08066/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient11626/study1/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient54802/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient07546/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient52030/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient41188/study2/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient59117/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient62963/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient08405/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient41574/study10/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient04321/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient03287/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient30254/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient02492/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient51836/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient01475/study4/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient10283/study3/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient30766/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient03451/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient55140/study2/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient14770/study1/view2_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient06109/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient22398/study1/view2_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient07860/study2/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient48862/study2/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient02788/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient19993/study2/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient02866/study2/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient62201/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient21338/study13/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient48344/study2/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient00911/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient33346/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient12398/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient48101/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient35628/study15/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient18872/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient31355/study2/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient28827/study1/view2_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient32422/study9/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient07772/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient15682/study2/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient57980/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient10251/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient07741/study2/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient33061/study3/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient15419/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient11106/study4/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient41227/study1/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient04136/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient43673/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient28649/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient15074/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient15283/study5/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient02311/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient32891/study10/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient04321/study3/view1_frontal.jpg,Pleural Other
+CheXpert-v1.0-small/train/patient24858/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient18645/study1/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient33914/study2/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient17473/study3/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient19775/study2/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient11000/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient30349/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient26700/study2/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient17161/study1/view2_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient15803/study2/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient33075/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient19681/study1/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient13419/study1/view2_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient05483/study2/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient08620/study3/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient19586/study3/view1_frontal.jpg,Lung Lesion
+CheXpert-v1.0-small/train/patient07337/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient05923/study1/view2_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient14092/study1/view1_frontal.jpg,Pneumonia
+CheXpert-v1.0-small/train/patient24008/study21/view1_frontal.jpg,Fracture
+CheXpert-v1.0-small/train/patient19864/study1/view1_frontal.jpg,Enlarged Cardiomediastinum
+CheXpert-v1.0-small/train/patient18567/study1/view1_frontal.jpg,No Finding
+CheXpert-v1.0-small/train/patient58621/study1/view1_frontal.jpg,Enlarged Cardiomediastinum

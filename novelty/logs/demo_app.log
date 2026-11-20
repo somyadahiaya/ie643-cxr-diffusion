@@ -1,0 +1,15 @@
+[demo] loading P-Rajiv SD-1.5 + LoRA adapters ...
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:00,  9.55it/s]
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 2243.32it/s]
+Loading pipeline components...:  33%|███▎      | 2/6 [00:00<00:00,  5.75it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00,  8.88it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00,  8.51it/s]
+[demo]   baseline       <- ie643_code/ie643/cxr_diffusion_checkpoints/prajiv/unet_clip/epoch_2
+[demo]   control        <- novelty/runs/control/step_2000
+[demo]   ce_only        <- novelty/runs/ce_only/step_1000
+[demo]   adv_only       <- novelty/runs/adv_only/step_2000
+[demo]   ce_adv         <- novelty/runs/ce_adv/step_1000
+[demo]   margin_adv     <- novelty/runs/margin_adv/step_1500
+[demo]   margin_adv_ms  <- novelty/runs/margin_adv_ms/step_1000
+[demo] loading held-out judge, OOD detector, anatomy checker ...
+[demo] ready.
+* Running on local URL:  http://127.0.0.1:7860
+* To create a public link, set `share=True` in `launch()`.

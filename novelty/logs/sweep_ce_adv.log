@@ -1,0 +1,12 @@
+/home/surajracha/pedal_for_healthcare/cs6101/Project_IE643/.venv311/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:02,  2.25it/s]
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 2065.30it/s]
+Loading pipeline components...:  50%|█████     | 3/6 [00:00<00:00,  4.70it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00,  7.58it/s]
+cfg7.5_lora1.0: find=0.470 defect=0.280 kid=8.43 div=0.237
+cfg7.5_lora0.75: find=0.435 defect=0.190 kid=5.23 div=0.255
+cfg5.0_lora1.0: find=0.440 defect=0.280 kid=5.49 div=0.261
+cfg5.0_lora0.75: find=0.345 defect=0.250 kid=3.13 div=0.286
+cfg4.0_lora1.0: find=0.405 defect=0.295 kid=4.80 div=0.275
+cfg4.0_lora0.75: find=0.310 defect=0.260 kid=2.34 div=0.300
+SELECTED {'selected': 'cfg4.0_lora0.75', 'cfg': 4.0, 'lora_scale': 0.75, 'constraints_met': True, 'rule': 'min KID s.t. find>=0.30 and defect<=0.30'}

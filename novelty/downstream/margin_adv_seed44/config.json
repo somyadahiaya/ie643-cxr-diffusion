@@ -1,0 +1,12 @@
+{
+ "train_csv": "novelty/csv/classifier_train_mixed_gen_margin_adv.csv",
+ "name": "margin_adv",
+ "seed": 44,
+ "epochs": 10,
+ "batch_size": 32,
+ "lr": 0.0001,
+ "workers": 12,
+ "class_weight_from": "all",
+ "syn_weight": 1.0,
+ "real_ft_epochs": 0
+}

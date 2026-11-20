@@ -1,0 +1,49 @@
+/home/surajracha/pedal_for_healthcare/cs6101/Project_IE643/.venv311/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  17%|█▋        | 1/6 [00:00<00:00,  5.62it/s]
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 2850.95it/s]
+Loading pipeline components...:  33%|███▎      | 2/6 [00:00<00:00,  5.38it/s]Loading pipeline components...:  83%|████████▎ | 5/6 [00:00<00:00,  6.84it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00,  7.36it/s]
+trainable LoRA params: 4368384
+[eval step 0] cond_acc=0.125 defect=0.442 anat=0.825 ood=0.425
+step=25 l_diff=0.1984 l_cls=5.4589 gen_acc=0.0000 t_k=201 sec=85.2000
+step=50 l_diff=0.1050 sec=162.5000
+step=75 l_diff=0.0923 l_cls=1.5528 gen_acc=0.5000 t_k=201 sec=245.8000
+step=100 l_diff=0.1945 sec=323.8000
+step=125 l_diff=0.1110 l_cls=2.5428 gen_acc=0.0000 t_k=51 sec=408.1000
+step=150 l_diff=0.1033 sec=487.1000
+step=175 l_diff=0.1145 l_cls=1.7005 gen_acc=0.0000 t_k=351 sec=568.5000
+step=200 l_diff=0.2569 sec=645.8000
+step=225 l_diff=0.2058 l_cls=0.8324 gen_acc=1.0000 t_k=251 sec=729.0000
+step=250 l_diff=0.1800 sec=805.6000
+step=275 l_diff=0.1128 l_cls=0.3264 gen_acc=1.0000 t_k=101 sec=888.0000
+step=300 l_diff=0.2021 sec=968.0000
+step=325 l_diff=0.0799 l_cls=0.5500 gen_acc=0.5000 t_k=251 sec=1052.3000
+step=350 l_diff=0.0410 sec=1129.7000
+step=375 l_diff=0.0972 l_cls=1.2041 gen_acc=0.5000 t_k=301 sec=1211.1000
+step=400 l_diff=0.0738 sec=1289.3000
+step=425 l_diff=0.1105 l_cls=1.4210 gen_acc=0.5000 t_k=351 sec=1370.5000
+step=450 l_diff=0.2278 sec=1447.3000
+step=475 l_diff=0.2526 l_cls=0.6477 gen_acc=1.0000 t_k=251 sec=1531.5000
+step=500 l_diff=0.1444 sec=1610.3000
+[eval step 500] cond_acc=0.275 defect=0.783 anat=0.583 ood=0.683
+step=525 l_diff=0.1142 l_cls=0.9836 gen_acc=0.5000 t_k=101 sec=2015.1000
+step=550 l_diff=0.1017 sec=2091.7000
+step=575 l_diff=0.1474 l_cls=0.0771 gen_acc=1.0000 t_k=251 sec=2176.5000
+step=600 l_diff=0.0980 sec=2253.7000
+step=625 l_diff=0.1964 l_cls=0.6076 gen_acc=1.0000 t_k=151 sec=2337.8000
+step=650 l_diff=0.2456 sec=2415.5000
+step=675 l_diff=0.1016 l_cls=0.3337 gen_acc=1.0000 t_k=201 sec=2499.4000
+step=700 l_diff=0.2997 sec=2578.3000
+step=725 l_diff=0.0984 l_cls=2.0008 gen_acc=0.0000 t_k=201 sec=2660.6000
+step=750 l_diff=0.1089 sec=2739.9000
+step=775 l_diff=0.1474 l_cls=1.1593 gen_acc=0.5000 t_k=101 sec=2821.3000
+step=800 l_diff=0.2177 sec=2898.9000
+step=825 l_diff=0.2425 l_cls=0.0540 gen_acc=1.0000 t_k=251 sec=2981.1000
+step=850 l_diff=0.0148 sec=3061.3000
+step=875 l_diff=0.3075 l_cls=0.5816 gen_acc=1.0000 t_k=151 sec=3142.3000
+step=900 l_diff=0.0325 sec=3222.1000
+step=925 l_diff=0.2758 l_cls=1.2064 gen_acc=0.5000 t_k=351 sec=3305.1000
+step=950 l_diff=0.1383 sec=3382.6000
+step=975 l_diff=0.0878 l_cls=0.0708 gen_acc=1.0000 t_k=351 sec=3463.8000
+step=1000 l_diff=0.1009 sec=3543.9000
+[eval step 1000] cond_acc=0.308 defect=0.867 anat=0.558 ood=0.733

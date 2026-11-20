@@ -1,0 +1,95 @@
+/home/surajracha/pedal_for_healthcare/cs6101/Project_IE643/.venv311/lib/python3.11/site-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading pipeline components...:  50%|█████     | 3/6 [00:00<00:00, 14.60it/s]
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][A
+Loading weights:  93%|█████████▎| 182/196 [00:00<00:00, 1811.43it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 1862.59it/s]
+Loading pipeline components...:  83%|████████▎ | 5/6 [00:00<00:00,  4.46it/s]Loading pipeline components...: 100%|██████████| 6/6 [00:00<00:00,  6.09it/s]
+trainable LoRA params: 4368384
+multi-scale D params: 1218180
+matched-confidence margins (real images): {'No Finding': 0.7867706418037415, 'Enlarged Cardiomediastinum': 0.9031740427017212, 'Lung Lesion': 1.1107592582702637, 'Pneumonia': 1.239542007446289, 'Pleural Other': 1.1890238523483276, 'Fracture': 0.42913395166397095}
+[eval step 0] cond_acc=0.125 defect=0.442 anat=0.825 ood=0.425
+step=25 l_diff=0.1987 l_D_pool=0.2305 l_D_b2=1.8148 l_D_b3=1.6574 l_D_b4=1.1657 l_D=1.2171 D_real=0.5529 D_fake=-0.3671 l_cls=5.3890 gen_acc=0.5000 t_k=201 sec=52.5000
+step=50 l_diff=0.0998 sec=100.8000
+step=75 l_diff=0.0935 l_D_pool=1.3223 l_D_b2=1.6669 l_D_b3=1.4638 l_D_b4=1.2587 l_D=1.4279 D_real=-0.1224 D_fake=-1.1415 l_cls=2.6710 gen_acc=0.0000 t_k=201 sec=153.6000
+step=100 l_diff=0.1843 sec=203.0000
+step=125 l_diff=0.1087 l_D_pool=0.6329 l_D_b2=0.9220 l_D_b3=0.9050 l_D_b4=0.9626 l_D=0.8556 D_real=0.4667 D_fake=-1.7968 l_cls=3.0352 gen_acc=0.0000 t_k=51 sec=256.1000
+step=150 l_diff=0.1060 sec=306.3000
+step=175 l_diff=0.1172 l_D_pool=0.1882 l_D_b2=0.8603 l_D_b3=0.5769 l_D_b4=0.6501 l_D=0.5688 D_real=1.3333 D_fake=-1.7858 l_cls=2.3394 gen_acc=0.5000 t_k=351 sec=357.9000
+step=200 l_diff=0.2773 sec=406.9000
+step=225 l_diff=0.2008 l_D_pool=0.0582 l_D_b2=1.1311 l_D_b3=1.0607 l_D_b4=0.6917 l_D=0.7354 D_real=0.6784 D_fake=-1.6159 l_cls=0.4167 gen_acc=0.5000 t_k=251 l_adv=1.3909 sec=460.0000
+step=250 l_diff=0.1737 sec=506.6000
+step=275 l_diff=0.1257 l_D_pool=1.9279 l_D_b2=1.7278 l_D_b3=1.7888 l_D_b4=1.5202 l_D=1.7412 D_real=0.2840 D_fake=-0.8486 l_cls=0.0000 gen_acc=1.0000 t_k=101 l_adv=0.9757 sec=559.4000
+step=300 l_diff=0.1925 sec=610.0000
+step=325 l_diff=0.0774 l_D_pool=0.0000 l_D_b2=1.4025 l_D_b3=0.9385 l_D_b4=0.3366 l_D=0.6694 D_real=1.1582 D_fake=-1.5633 l_cls=0.4536 gen_acc=1.0000 t_k=251 l_adv=1.5400 sec=663.0000
+step=350 l_diff=0.0419 sec=712.5000
+step=375 l_diff=0.0859 l_D_pool=1.7253 l_D_b2=1.1041 l_D_b3=0.8517 l_D_b4=0.6678 l_D=1.0872 D_real=2.1684 D_fake=-0.1080 l_cls=0.6392 gen_acc=0.5000 t_k=301 l_adv=1.2820 sec=764.4000
+step=400 l_diff=0.0737 sec=814.3000
+step=425 l_diff=0.0988 l_D_pool=0.3419 l_D_b2=1.5193 l_D_b3=1.1567 l_D_b4=0.7250 l_D=0.9357 D_real=1.9384 D_fake=-0.6390 l_cls=0.5917 gen_acc=0.5000 t_k=351 l_adv=1.0038 sec=866.0000
+step=450 l_diff=0.2232 sec=912.7000
+step=475 l_diff=0.2463 l_D_pool=0.5677 l_D_b2=1.0010 l_D_b3=1.0366 l_D_b4=0.8750 l_D=0.8701 D_real=0.5443 D_fake=-1.8479 l_cls=0.7425 gen_acc=0.5000 t_k=251 l_adv=1.6094 sec=963.9000
+step=500 l_diff=0.1352 sec=1012.4000
+[eval step 500] cond_acc=0.350 defect=0.242 anat=0.850 ood=0.175
+step=525 l_diff=0.1132 l_D_pool=0.4192 l_D_b2=1.5633 l_D_b3=1.2847 l_D_b4=0.7659 l_D=1.0083 D_real=1.3473 D_fake=-0.2633 l_cls=0.4364 gen_acc=1.0000 t_k=101 l_adv=1.2819 sec=1261.7000
+step=550 l_diff=0.1083 sec=1310.5000
+step=575 l_diff=0.1602 l_D_pool=0.3844 l_D_b2=1.3727 l_D_b3=1.1245 l_D_b4=1.1530 l_D=1.0087 D_real=0.9918 D_fake=-0.7900 l_cls=1.5106 gen_acc=0.5000 t_k=251 l_adv=0.9076 sec=1362.1000
+step=600 l_diff=0.0930 sec=1410.7000
+step=625 l_diff=0.2022 l_D_pool=0.3134 l_D_b2=1.6934 l_D_b3=1.4407 l_D_b4=0.8782 l_D=1.0814 D_real=0.8343 D_fake=-0.5587 l_cls=0.7581 gen_acc=0.5000 t_k=151 l_adv=0.9261 sec=1463.8000
+step=650 l_diff=0.2425 sec=1513.0000
+step=675 l_diff=0.1019 l_D_pool=0.8235 l_D_b2=1.2275 l_D_b3=1.1990 l_D_b4=1.0277 l_D=1.0694 D_real=0.6681 D_fake=-1.2842 l_cls=1.3100 gen_acc=0.5000 t_k=201 l_adv=1.1780 sec=1566.2000
+step=700 l_diff=0.2975 sec=1616.4000
+step=725 l_diff=0.0922 l_D_pool=1.3660 l_D_b2=1.4005 l_D_b3=1.3215 l_D_b4=1.4289 l_D=1.3792 D_real=1.0953 D_fake=0.0592 l_cls=2.3935 gen_acc=0.0000 t_k=201 l_adv=0.6737 sec=1668.6000
+step=750 l_diff=0.1146 sec=1719.2000
+step=775 l_diff=0.1569 l_D_pool=1.1137 l_D_b2=1.7349 l_D_b3=1.6229 l_D_b4=1.4260 l_D=1.4744 D_real=-0.2695 D_fake=-1.5188 l_cls=0.9138 gen_acc=0.5000 t_k=101 l_adv=1.1963 sec=1768.6000
+step=800 l_diff=0.2143 sec=1818.2000
+step=825 l_diff=0.2481 l_D_pool=1.2988 l_D_b2=1.6123 l_D_b3=1.1194 l_D_b4=1.7714 l_D=1.4505 D_real=0.5501 D_fake=-0.4088 l_cls=0.6341 gen_acc=0.5000 t_k=251 l_adv=0.9809 sec=1869.9000
+step=850 l_diff=0.0143 sec=1920.7000
+step=875 l_diff=0.3461 l_D_pool=0.3515 l_D_b2=1.2798 l_D_b3=0.9356 l_D_b4=0.8915 l_D=0.8646 D_real=1.1251 D_fake=-0.5464 l_cls=2.5080 gen_acc=0.0000 t_k=151 l_adv=0.8887 sec=1972.3000
+step=900 l_diff=0.0308 sec=2022.9000
+step=925 l_diff=0.2720 l_D_pool=1.7080 l_D_b2=1.5374 l_D_b3=1.8204 l_D_b4=2.1571 l_D=1.8057 D_real=0.4157 D_fake=-0.0741 l_cls=1.1426 gen_acc=0.5000 t_k=351 l_adv=0.3151 sec=2075.3000
+step=950 l_diff=0.1507 sec=2124.5000
+step=975 l_diff=0.0899 l_D_pool=2.4291 l_D_b2=2.2193 l_D_b3=2.2369 l_D_b4=1.9675 l_D=2.2132 D_real=-0.3251 D_fake=-0.4024 l_cls=0.1458 gen_acc=1.0000 t_k=351 l_adv=0.7000 sec=2175.2000
+step=1000 l_diff=0.1069 sec=2222.2000
+[eval step 1000] cond_acc=0.400 defect=0.208 anat=0.892 ood=0.150
+step=1025 l_diff=0.2032 l_D_pool=0.6823 l_D_b2=1.8219 l_D_b3=1.4934 l_D_b4=0.9399 l_D=1.2344 D_real=0.5053 D_fake=-0.8302 l_cls=0.1403 gen_acc=1.0000 t_k=51 l_adv=0.8957 sec=2470.1000
+step=1050 l_diff=0.1331 sec=2519.0000
+step=1075 l_diff=0.1134 l_D_pool=0.3810 l_D_b2=1.3725 l_D_b3=1.1163 l_D_b4=0.8713 l_D=0.9353 D_real=0.9678 D_fake=-0.6594 l_cls=0.8507 gen_acc=0.5000 t_k=101 l_adv=0.9598 sec=2571.5000
+step=1100 l_diff=0.0976 sec=2618.2000
+step=1125 l_diff=0.0643 l_D_pool=1.8584 l_D_b2=2.2209 l_D_b3=2.3139 l_D_b4=1.9585 l_D=2.0879 D_real=-0.2166 D_fake=-0.4390 l_cls=0.0000 gen_acc=1.0000 t_k=201 l_adv=0.5165 sec=2670.3000
+step=1150 l_diff=0.1179 sec=2720.3000
+step=1175 l_diff=0.0311 l_D_pool=2.0138 l_D_b2=1.7862 l_D_b3=1.3414 l_D_b4=1.4540 l_D=1.6488 D_real=0.9784 D_fake=0.1193 l_cls=0.3220 gen_acc=1.0000 t_k=301 l_adv=0.6949 sec=2772.3000
+step=1200 l_diff=0.0996 sec=2820.7000
+step=1225 l_diff=0.3828 l_D_pool=1.2155 l_D_b2=1.3433 l_D_b3=1.2203 l_D_b4=1.2207 l_D=1.2500 D_real=0.8116 D_fake=-0.4459 l_cls=0.0000 gen_acc=1.0000 t_k=101 l_adv=0.7931 sec=2874.6000
+step=1250 l_diff=0.0752 sec=2924.5000
+step=1275 l_diff=0.1836 l_D_pool=0.6116 l_D_b2=1.4721 l_D_b3=1.0699 l_D_b4=0.7141 l_D=0.9670 D_real=0.6070 D_fake=-0.6132 l_cls=0.0000 gen_acc=1.0000 t_k=251 l_adv=1.0478 sec=2977.5000
+step=1300 l_diff=0.1404 sec=3026.8000
+step=1325 l_diff=0.0909 l_D_pool=0.3177 l_D_b2=1.7752 l_D_b3=1.7351 l_D_b4=1.6925 l_D=1.3801 D_real=0.1603 D_fake=-0.6791 l_cls=0.0000 gen_acc=1.0000 t_k=51 l_adv=0.5631 sec=3077.3000
+step=1350 l_diff=0.1534 sec=3127.3000
+step=1375 l_diff=0.0644 l_D_pool=0.5410 l_D_b2=1.1944 l_D_b3=0.9086 l_D_b4=0.9580 l_D=0.9005 D_real=0.9022 D_fake=-0.8179 l_cls=0.0000 gen_acc=1.0000 t_k=201 l_adv=1.0732 sec=3181.0000
+step=1400 l_diff=0.1059 sec=3231.9000
+step=1425 l_diff=0.3749 l_D_pool=2.6644 l_D_b2=2.9562 l_D_b3=3.2773 l_D_b4=3.6528 l_D=3.1376 D_real=0.2305 D_fake=1.3543 l_cls=0.6127 gen_acc=0.5000 t_k=251 l_adv=-0.6426 sec=3284.3000
+step=1450 l_diff=0.0271 sec=3333.9000
+step=1475 l_diff=0.1042 l_D_pool=0.0000 l_D_b2=1.1633 l_D_b3=0.7668 l_D_b4=0.4623 l_D=0.5981 D_real=1.2350 D_fake=-0.8804 l_cls=0.0077 gen_acc=1.0000 t_k=101 l_adv=1.0236 sec=3386.7000
+step=1500 l_diff=0.2924 sec=3436.0000
+[eval step 1500] cond_acc=0.400 defect=0.342 anat=0.858 ood=0.258
+step=1525 l_diff=0.0692 l_D_pool=1.5090 l_D_b2=2.4814 l_D_b3=2.1981 l_D_b4=1.8005 l_D=1.9973 D_real=0.2230 D_fake=0.1675 l_cls=0.4438 gen_acc=0.5000 t_k=351 l_adv=-0.0320 sec=3680.2000
+step=1550 l_diff=0.0846 sec=3730.0000
+step=1575 l_diff=0.2379 l_D_pool=0.6835 l_D_b2=1.7405 l_D_b3=1.7162 l_D_b4=1.3995 l_D=1.3849 D_real=0.0451 D_fake=-0.6569 l_cls=0.0000 gen_acc=1.0000 t_k=51 l_adv=0.7922 sec=3783.5000
+step=1600 l_diff=0.0556 sec=3834.4000
+step=1625 l_diff=0.0396 l_D_pool=1.5299 l_D_b2=1.2913 l_D_b3=1.2650 l_D_b4=1.0884 l_D=1.2937 D_real=0.0245 D_fake=-1.0184 l_cls=0.4582 gen_acc=0.5000 t_k=101 l_adv=0.8874 sec=3887.0000
+step=1650 l_diff=0.1379 sec=3933.1000
+step=1675 l_diff=0.1209 l_D_pool=0.7586 l_D_b2=1.4559 l_D_b3=1.0555 l_D_b4=0.8259 l_D=1.0240 D_real=0.8749 D_fake=-0.3802 l_cls=0.0000 gen_acc=1.0000 t_k=301 l_adv=0.9183 sec=3986.3000
+step=1700 l_diff=0.1142 sec=4035.0000
+step=1725 l_diff=0.2645 l_D_pool=1.5469 l_D_b2=1.1950 l_D_b3=1.2651 l_D_b4=1.2956 l_D=1.3256 D_real=2.0928 D_fake=0.2534 l_cls=0.0000 gen_acc=1.0000 t_k=351 l_adv=0.4792 sec=4087.2000
+step=1750 l_diff=0.3414 sec=4135.3000
+step=1775 l_diff=0.0826 l_D_pool=0.3931 l_D_b2=1.5917 l_D_b3=1.0352 l_D_b4=0.7277 l_D=0.9369 D_real=0.4031 D_fake=-1.2251 l_cls=0.0000 gen_acc=1.0000 t_k=101 l_adv=1.2099 sec=4187.6000
+step=1800 l_diff=0.1229 sec=4235.5000
+step=1825 l_diff=0.0603 l_D_pool=1.0828 l_D_b2=1.6337 l_D_b3=1.1945 l_D_b4=1.2541 l_D=1.2913 D_real=0.9502 D_fake=-0.0366 l_cls=0.0000 gen_acc=1.0000 t_k=151 l_adv=0.5997 sec=4287.0000
+step=1850 l_diff=0.1819 sec=4333.0000
+step=1875 l_diff=0.1020 l_D_pool=0.8290 l_D_b2=1.7591 l_D_b3=1.4314 l_D_b4=0.8336 l_D=1.2133 D_real=0.1743 D_fake=-0.8974 l_cls=0.0000 gen_acc=1.0000 t_k=101 l_adv=0.9256 sec=4385.1000
+step=1900 l_diff=0.0411 sec=4433.2000
+step=1925 l_diff=0.1499 l_D_pool=0.4787 l_D_b2=1.4646 l_D_b3=1.1723 l_D_b4=0.7073 l_D=0.9557 D_real=0.9039 D_fake=-0.7059 l_cls=3.7739 gen_acc=0.0000 t_k=101 l_adv=0.9335 sec=4485.9000
+step=1950 l_diff=0.2847 sec=4535.0000
+step=1975 l_diff=0.4243 l_D_pool=1.1427 l_D_b2=1.4612 l_D_b3=1.3286 l_D_b4=1.3798 l_D=1.3281 D_real=0.8120 D_fake=-0.2761 l_cls=1.7306 gen_acc=0.5000 t_k=301 l_adv=0.5539 sec=4584.9000
+step=2000 l_diff=0.2208 sec=4632.2000
+[eval step 2000] cond_acc=0.283 defect=0.275 anat=0.892 ood=0.250
+BEST checkpoint: 1000 {'cond_acc': 0.4000000163912773, 'ood_rate': 0.15000000298023225, 'anatomy_pass': 0.8916666666666668, 'defect_rate': 0.20833333333333334}

@@ -1,0 +1,27 @@
+Unable to import `torchao` Tensor objects. This may affect loading checkpoints serialized with `torchao`
+/content/drive/.shortcut-targets-by-id/15zbdkZw8dQy8vHgpILK4OuNC2FZPsByV/cxr_diffusion_checkpoints/gradio_generation.py:116: UserWarning: The parameters have been moved from the Blocks constructor to the launch() method in Gradio 6.0: theme. Please pass these parameters to launch() instead.
+  with gr.Blocks(title="Synthetic CXR Generator", theme=gr.themes.Soft()) as interface:
+* Running on local URL:  http://0.0.0.0:7860
+* To create a public link, set `share=True` in `launch()`.
+
+Switching model... Cleaning up VRAM.
+Loading Prajiv base pipeline...
+/usr/local/lib/python3.13/dist-packages/diffusers/utils/deprecation_utils.py:23: FutureWarning: `torch_dtype` is deprecated and will be removed in version 1.0.0. Please use `dtype` instead.
+  deprecate("torch_dtype", "1.0.0", _TORCH_DTYPE_DEPRECATION_MESSAGE)
+Loading pipeline components...:   0%|          | 0/7 [00:00<?, ?it/s]
+Loading weights:   0%|          | 0/196 [00:00<?, ?it/s][A
+Loading weights:   1%|          | 2/196 [00:00<00:56,  3.41it/s][A
+Loading weights:  58%|█████▊    | 114/196 [00:00<00:00, 219.94it/s][A
+Loading weights:  90%|█████████ | 177/196 [00:00<00:00, 238.49it/s][ALoading weights: 100%|██████████| 196/196 [00:00<00:00, 199.76it/s]
+Loading pipeline components...:  29%|██▊       | 2/7 [00:01<00:03,  1.65it/s]Loading pipeline components...:  43%|████▎     | 3/7 [00:01<00:02,  1.65it/s]
+Loading weights:   0%|          | 0/396 [00:00<?, ?it/s][A
+Loading weights:  95%|█████████▍| 376/396 [00:00<00:00, 3748.47it/s][ALoading weights: 100%|██████████| 396/396 [00:00<00:00, 3726.06it/s]
+Loading pipeline components...:  71%|███████▏  | 5/7 [00:02<00:00,  2.57it/s]Loading pipeline components...:  86%|████████▌ | 6/7 [00:02<00:00,  2.07it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:03<00:00,  2.65it/s]Loading pipeline components...: 100%|██████████| 7/7 [00:03<00:00,  2.28it/s]
+Loading LoRA adapters from ./prajiv/unet_clip/epoch_2...
+Prajiv successfully loaded into VRAM!
+
+Generating: 'Chest X-ray showing Lung Lesion' | Model: Prajiv | Seed: 3515323319 | Guidance: 7.5
+
+Generating: 'Chest X-ray showing Pleural Other' | Model: Prajiv | Seed: 3515323319 | Guidance: 7.5
+
+Generating: 'Chest X-ray showing Pneumonia' | Model: Prajiv | Seed: 3515323319 | Guidance: 7.5

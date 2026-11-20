@@ -1,0 +1,35 @@
+# --- large weights: hosted on Hugging Face, fetched with scripts/download_weights.sh ---
+novelty/prajiv_base/**/*.safetensors
+ie643_code/ie643/cxr_diffusion_checkpoints/prajiv/unet_clip/epoch_2/model.safetensors
+cxr_diffusion_checkpoints/epoch_8/model.safetensors
+cxr_diffusion_checkpoints/epoch_8/model_1.safetensors
+prism/
+synthetic_sets/
+# all intermediate LoRA steps live on HF; only the report-selected step of each run is committed
+novelty/runs/*/step_*/
+!novelty/runs/control/step_2000/
+!novelty/runs/ce_only/step_1000/
+!novelty/runs/adv_only/step_2000/
+!novelty/runs/adv_only_l02/step_1500/
+!novelty/runs/ce_adv/step_1000/
+!novelty/runs/margin_adv/step_1500/
+!novelty/runs/margin_adv_ms/step_1000/
+
+# --- data: CheXpert may not be redistributed; synthetic sets are regenerated or downloaded ---
+data/CheXpert-v1.0-small/
+*.zip
+
+# --- per-run copies of the training split (re-created deterministically by downstream_train.py) ---
+novelty/downstream/*/train.csv
+novelty/downstream/*/train_real_only.csv
+novelty/downstream/*/val.csv
+
+# --- environment / caches / build products ---
+.venv*/
+__pycache__/
+*.pyc
+novelty/.tmp/
+.cache/
+*.aux
+*.log.tmp
+*.synctex.gz

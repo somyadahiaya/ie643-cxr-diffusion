@@ -1,0 +1,9 @@
+{
+ "best_step": 2000,
+ "metrics": {
+  "cond_acc": 0.3166666716337204,
+  "ood_rate": 0.05833333432674408,
+  "anatomy_pass": 0.9,
+  "defect_rate": 0.14166666666666666
+ }
+}

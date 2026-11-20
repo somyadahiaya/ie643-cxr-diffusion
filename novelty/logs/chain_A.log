@@ -1,0 +1,13 @@
+wrote 2673 CheXpert-style JPEGs to /home/surajracha/pedal_for_healthcare/cs6101/Project_IE643/data/CheXpert-v1.0-small/gen_ce_adv_jpg; per class: {'Enlarged Cardiomediastinum': 500, 'Lung Lesion': 500, 'Pleural Other': 500, 'Pneumonia': 500, 'No Finding': 500, 'Fracture': 173} 
+CSV: /home/surajracha/pedal_for_healthcare/cs6101/Project_IE643/novelty/csv/classifier_train_mixed_gen_ce_adv_jpg.csv
+
+=== ce_adv_jpg ===
+                                 n  requested_finding_rate  normalised_cond  cond_auroc  xrv_prob_gen  xrv_prob_real  anatomy_pass  ood_rate  defect_rate  kid_x1e3  diversity  diversity_real  nn_dist_median
+No Finding                  500.0                   0.778            2.161       0.930           NaN            NaN         0.834     0.492        0.546    24.455      0.182           0.324           0.052
+Enlarged Cardiomediastinum  500.0                   0.758            1.895       0.925         0.518          0.477         0.952     0.326        0.348    10.361      0.220           0.348           0.086
+Lung Lesion                 500.0                   0.448            2.240       0.853         0.532          0.530         0.934     0.094        0.140     3.645      0.252           0.348           0.083
+Pneumonia                   500.0                   0.118            0.590       0.621         0.452          0.470         0.758     0.196        0.368     7.920      0.262           0.371           0.105
+Pleural Other               500.0                   0.674            2.247       0.804           NaN            NaN         0.888     0.198        0.276    13.158      0.216           0.339           0.091
+Fracture                    173.0                   0.306            0.957       0.814         0.414          0.411         0.931     0.121        0.162     6.027      0.210           0.316           0.059
+MEAN(targets)                 NaN                   0.461            1.586       0.803           NaN            NaN         0.893     0.187        0.259     8.222      0.232           0.345           0.085
+[A] CHAIN DONE

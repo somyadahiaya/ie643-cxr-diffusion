@@ -1,0 +1,227 @@
+[
+ {
+  "No Finding": {
+   "cond_acc": 0.625,
+   "ood_rate": 0.375,
+   "anatomy_pass": 0.9583333333333334,
+   "defect_rate": 0.375
+  },
+  "Enlarged Cardiomediastinum": {
+   "cond_acc": 0.0833333358168602,
+   "ood_rate": 0.3333333432674408,
+   "anatomy_pass": 0.875,
+   "defect_rate": 0.375
+  },
+  "Lung Lesion": {
+   "cond_acc": 0.0,
+   "ood_rate": 0.5833333730697632,
+   "anatomy_pass": 0.75,
+   "defect_rate": 0.5833333333333334
+  },
+  "Pneumonia": {
+   "cond_acc": 0.1666666716337204,
+   "ood_rate": 0.2916666865348816,
+   "anatomy_pass": 0.8333333333333334,
+   "defect_rate": 0.2916666666666667
+  },
+  "Pleural Other": {
+   "cond_acc": 0.1666666716337204,
+   "ood_rate": 0.4166666865348816,
+   "anatomy_pass": 0.7916666666666666,
+   "defect_rate": 0.4583333333333333
+  },
+  "Fracture": {
+   "cond_acc": 0.2083333432674408,
+   "ood_rate": 0.5,
+   "anatomy_pass": 0.875,
+   "defect_rate": 0.5
+  },
+  "mean_target": {
+   "cond_acc": 0.12500000447034837,
+   "ood_rate": 0.4250000178813934,
+   "anatomy_pass": 0.825,
+   "defect_rate": 0.4416666666666666
+  },
+  "step": 0
+ },
+ {
+  "No Finding": {
+   "cond_acc": 0.5,
+   "ood_rate": 0.25,
+   "anatomy_pass": 0.9166666666666666,
+   "defect_rate": 0.2916666666666667
+  },
+  "Enlarged Cardiomediastinum": {
+   "cond_acc": 0.0833333358168602,
+   "ood_rate": 0.375,
+   "anatomy_pass": 0.875,
+   "defect_rate": 0.4166666666666667
+  },
+  "Lung Lesion": {
+   "cond_acc": 0.0,
+   "ood_rate": 0.625,
+   "anatomy_pass": 0.7916666666666666,
+   "defect_rate": 0.6666666666666666
+  },
+  "Pneumonia": {
+   "cond_acc": 0.1666666716337204,
+   "ood_rate": 0.5416666865348816,
+   "anatomy_pass": 0.8333333333333334,
+   "defect_rate": 0.5833333333333334
+  },
+  "Pleural Other": {
+   "cond_acc": 0.0416666679084301,
+   "ood_rate": 0.4166666865348816,
+   "anatomy_pass": 0.8333333333333334,
+   "defect_rate": 0.4583333333333333
+  },
+  "Fracture": {
+   "cond_acc": 0.2083333432674408,
+   "ood_rate": 0.375,
+   "anatomy_pass": 1.0,
+   "defect_rate": 0.375
+  },
+  "mean_target": {
+   "cond_acc": 0.1000000037252903,
+   "ood_rate": 0.4666666746139526,
+   "anatomy_pass": 0.8666666666666668,
+   "defect_rate": 0.5
+  },
+  "step": 500
+ },
+ {
+  "No Finding": {
+   "cond_acc": 0.2916666865348816,
+   "ood_rate": 0.4166666865348816,
+   "anatomy_pass": 0.75,
+   "defect_rate": 0.5
+  },
+  "Enlarged Cardiomediastinum": {
+   "cond_acc": 0.2083333432674408,
+   "ood_rate": 0.5833333730697632,
+   "anatomy_pass": 0.75,
+   "defect_rate": 0.5833333333333334
+  },
+  "Lung Lesion": {
+   "cond_acc": 0.0,
+   "ood_rate": 0.7083333730697632,
+   "anatomy_pass": 0.6666666666666666,
+   "defect_rate": 0.75
+  },
+  "Pneumonia": {
+   "cond_acc": 0.375,
+   "ood_rate": 0.5,
+   "anatomy_pass": 0.7083333333333334,
+   "defect_rate": 0.625
+  },
+  "Pleural Other": {
+   "cond_acc": 0.25,
+   "ood_rate": 0.4166666865348816,
+   "anatomy_pass": 0.7916666666666666,
+   "defect_rate": 0.4583333333333333
+  },
+  "Fracture": {
+   "cond_acc": 0.5,
+   "ood_rate": 0.4583333432674408,
+   "anatomy_pass": 0.8333333333333334,
+   "defect_rate": 0.5
+  },
+  "mean_target": {
+   "cond_acc": 0.26666666865348815,
+   "ood_rate": 0.5333333551883698,
+   "anatomy_pass": 0.75,
+   "defect_rate": 0.5833333333333334
+  },
+  "step": 1000
+ },
+ {
+  "No Finding": {
+   "cond_acc": 0.2083333432674408,
+   "ood_rate": 0.5,
+   "anatomy_pass": 0.8333333333333334,
+   "defect_rate": 0.5416666666666666
+  },
+  "Enlarged Cardiomediastinum": {
+   "cond_acc": 0.1666666716337204,
+   "ood_rate": 0.5416666865348816,
+   "anatomy_pass": 0.8333333333333334,
+   "defect_rate": 0.5416666666666666
+  },
+  "Lung Lesion": {
+   "cond_acc": 0.125,
+   "ood_rate": 0.5416666865348816,
+   "anatomy_pass": 0.75,
+   "defect_rate": 0.625
+  },
+  "Pneumonia": {
+   "cond_acc": 0.2916666865348816,
+   "ood_rate": 0.5416666865348816,
+   "anatomy_pass": 0.7083333333333334,
+   "defect_rate": 0.5833333333333334
+  },
+  "Pleural Other": {
+   "cond_acc": 0.25,
+   "ood_rate": 0.5,
+   "anatomy_pass": 0.75,
+   "defect_rate": 0.5833333333333334
+  },
+  "Fracture": {
+   "cond_acc": 0.2916666865348816,
+   "ood_rate": 0.6666666865348816,
+   "anatomy_pass": 0.8333333333333334,
+   "defect_rate": 0.6666666666666666
+  },
+  "mean_target": {
+   "cond_acc": 0.22500000894069672,
+   "ood_rate": 0.5583333492279052,
+   "anatomy_pass": 0.7750000000000001,
+   "defect_rate": 0.6
+  },
+  "step": 1500
+ },
+ {
+  "No Finding": {
+   "cond_acc": 0.375,
+   "ood_rate": 0.4583333432674408,
+   "anatomy_pass": 0.8333333333333334,
+   "defect_rate": 0.5
+  },
+  "Enlarged Cardiomediastinum": {
+   "cond_acc": 0.25,
+   "ood_rate": 0.625,
+   "anatomy_pass": 0.7916666666666666,
+   "defect_rate": 0.625
+  },
+  "Lung Lesion": {
+   "cond_acc": 0.0833333358168602,
+   "ood_rate": 0.5416666865348816,
+   "anatomy_pass": 0.7083333333333334,
+   "defect_rate": 0.5416666666666666
+  },
+  "Pneumonia": {
+   "cond_acc": 0.4166666865348816,
+   "ood_rate": 0.4583333432674408,
+   "anatomy_pass": 0.6666666666666666,
+   "defect_rate": 0.5416666666666666
+  },
+  "Pleural Other": {
+   "cond_acc": 0.25,
+   "ood_rate": 0.4166666865348816,
+   "anatomy_pass": 0.7083333333333334,
+   "defect_rate": 0.5416666666666666
+  },
+  "Fracture": {
+   "cond_acc": 0.25,
+   "ood_rate": 0.5,
+   "anatomy_pass": 0.7916666666666666,
+   "defect_rate": 0.5
+  },
+  "mean_target": {
+   "cond_acc": 0.25000000447034837,
+   "ood_rate": 0.5083333432674408,
+   "anatomy_pass": 0.7333333333333333,
+   "defect_rate": 0.5499999999999999
+  },
+  "step": 2000
+ }
+]

@@ -1,0 +1,7 @@
+{
+ "selected": "cfg4.0_lora0.75",
+ "cfg": 4.0,
+ "lora_scale": 0.75,
+ "constraints_met": true,
+ "rule": "min KID s.t. find>=0.30 and defect<=0.30"
+}
