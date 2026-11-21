@@ -52,12 +52,14 @@ novelty/                                      PHASE 2 (novelty): all code, resul
   report/                                     generated tables and figures used in the report and poster
   prajiv_base/                                base SD-1.5 CXR pipeline configs/tokenizer (weights on HF)
 demo/                                         Gradio app and self-contained Kaggle GPU notebook; downloads models from HF
-report/                                       LaTeX report (IE643_Project_Report.tex/.pdf, refs.bib, figs)
+report/                                       LaTeX report (IE643_Project_Report.tex/.pdf, refs.bib, figs); novelty_2page/ = 2-page novelty report
 poster/                                       A0 poster (Gradient_Mavericks_IE643_Poster.tex/.pdf)
 data/                                         put CheXpert-v1.0-small here (see data/README.md)
 ```
 
 ## Demo (no clone needed)
+
+**Demo video:** [Google Drive](https://drive.google.com/drive/folders/1G2jfzdX-hmI5Eav6i108QYIP172fx8tv?usp=sharing)
 
 ### Run on Kaggle GPU
 

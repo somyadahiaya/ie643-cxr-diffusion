@@ -4,7 +4,7 @@
 #   bash scripts/download_weights.sh SillySom/ie643-cxr-diffusion-weights --all           # + PRISM, phase-1 accelerate checkpoints, all LoRA steps (~7 GB)
 #   bash scripts/download_weights.sh SillySom/ie643-cxr-diffusion-weights --synthetic     # + the 15 generated image sets (~7 GB),
 #                                                                         #   unpacked into data/CheXpert-v1.0-small/
-# Private repo: run `.venv311/bin/hf auth login` first.
+# The repo is public: no Hugging Face login is needed.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 REPO=SillySom/ie643-cxr-diffusion-weights

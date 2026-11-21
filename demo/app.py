@@ -3,7 +3,7 @@
 Self-contained: needs only this file and the packages in requirements.txt. The models (about 2.2 GB) are
 downloaded from the Hugging Face repo on first run and cached (~/.cache/huggingface, or --cache_dir).
 
-  export HF_TOKEN=hf_...                     # the weights repo is private
+  # The weights repo is public: no Hugging Face token is needed (HF_TOKEN is still used if set).
   python app.py                              # -> http://127.0.0.1:7860
   python app.py --local_root /path/to/ie643-cxr-diffusion   # use a full clone instead of downloading
 
