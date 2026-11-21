@@ -14,10 +14,53 @@ A single-file Gradio app (`app.py`). It downloads the report's models from the H
 
 **Classify an X-ray tab:** the same analysis for any X-ray you upload.
 
-## Requirements
+## Run on Kaggle GPU
+
+Use **[cxr_demo_kaggle.ipynb](cxr_demo_kaggle.ipynb)** to run the demo without a local NVIDIA GPU.
+The notebook is self-contained: you do not need to upload `app.py`, clone the repository, or use a Hugging Face token.
+The model weights are public.
+
+1. Download `cxr_demo_kaggle.ipynb` from this repository. On GitHub, open the file and select **Download raw file**.
+2. Create a notebook at [Kaggle Code](https://www.kaggle.com/code), then select **File > Import Notebook**
+   and upload the downloaded `.ipynb`. Keep the notebook private.
+3. Under **Settings / Session options**, select an available **GPU** (for example, T4) and enable **Internet**.
+   If the GPU option is disabled, complete Kaggle's phone verification in your account settings, reload the editor,
+   and check your remaining GPU quota. Changing Python code cannot enable a GPU blocked by your account settings.
+4. Run the three code cells in order, or select **Run All**:
+   - **Check GPU, Internet, and public weights:** verifies CUDA and access to the required model files.
+   - **Install the demo:** creates the demo environment using Kaggle's existing CUDA PyTorch installation.
+   - **Launch the demo:** downloads the weights, loads all seven generators and the classifiers, and starts Gradio.
+5. Wait for the printed `https://...gradio.live` link. Open it and sign in with username **`cxr`**
+   and the password printed in the launch cell. The password is randomly generated for each launch;
+   the link also changes. No credentials are stored in the committed notebook.
+6. Leave the final cell and Kaggle session running while using the demo. To finish, interrupt the final cell
+   and select **Stop session** in Kaggle to release the GPU.
+
+The first run installs dependencies and downloads about 2.2 GB of model assets, plus the TorchXRayVision models.
+Downloads are cached under `/kaggle/working/cxr-demo/model-cache` while the session's files remain available.
+The app uses one GPU even if Kaggle assigns two. It automatically selects fp16 on T4/P100 GPUs and bf16 on
+supported newer GPUs; fp16 results can differ from the report's bf16 results. Start with one image per generator.
+
+This notebook was validated on Kaggle with a Tesla T4, Python 3.13, PyTorch `2.11.0+cu130`, and CUDA 13.0.
+Both baseline and Margin + Adversarial generation, anatomy/OOD checks, and downstream classification completed
+with seed 42, 50 DDIM steps, and CFG 7.5. These checks confirm execution, not that every image shows the requested finding.
+
+### Kaggle troubleshooting
+
+- **No CUDA GPU:** enable a GPU before running the notebook; restart the session if Kaggle requests it.
+- **Download fails:** check that Internet is enabled and the public weights repository is reachable.
+- **App exits:** read the exception printed by the final cell, which includes the end of
+  `/kaggle/working/cxr-demo/demo.log`.
+- **Out of GPU memory:** use one image per generator and stop other GPU workloads in the session.
+- **Demo link stops working:** check that the Kaggle session and launch cell are still running.
+  After restarting the launch cell, use its new link and password.
+
+The link routes through Gradio. Do not upload sensitive patient data or publish notebook outputs containing the
+generated session password. Clear outputs before sharing a notebook copy.
+
+## Requirements for the standalone Python app
 - An NVIDIA GPU with ≥ 8 GB memory (tested on an RTX A6000), CUDA 12.x drivers, Python 3.11.
-- Access to the weights repo. It is private, so you need a Hugging Face **read** token from an account with
-  access: https://huggingface.co/settings/tokens
+- Internet access to the public weights repository. No Hugging Face token is required.
 
 ## Run it (without cloning the project)
 ```bash
@@ -26,7 +69,6 @@ mkdir cxr-demo && cd cxr-demo
 #   app.py  requirements.txt  README.md
 # ... or from the weights repo:
 pip install "huggingface-hub==2.3.0"
-hf auth login                                   # paste your read token (or: export HF_TOKEN=hf_...)
 hf download SillySom/ie643-cxr-diffusion-weights --include "demo/*" --local-dir .
 cd demo
 

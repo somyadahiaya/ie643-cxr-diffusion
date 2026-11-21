@@ -51,18 +51,32 @@ novelty/                                      PHASE 2 (novelty): all code, resul
   results/  downstream/  logs/  csv/          evaluation json/csv, per-run DenseNet logs (+2 demo weights), raw logs, train CSVs
   report/                                     generated tables and figures used in the report and poster
   prajiv_base/                                base SD-1.5 CXR pipeline configs/tokenizer (weights on HF)
-demo/                                         standalone Gradio demo (app.py + README + requirements): downloads models from HF
+demo/                                         Gradio app and self-contained Kaggle GPU notebook; downloads models from HF
 report/                                       LaTeX report (IE643_Project_Report.tex/.pdf, refs.bib, figs)
 poster/                                       A0 poster (Gradient_Mavericks_IE643_Poster.tex/.pdf)
 data/                                         put CheXpert-v1.0-small here (see data/README.md)
 ```
 
 ## Demo (no clone needed)
+
+### Run on Kaggle GPU
+
+Download **[demo/cxr_demo_kaggle.ipynb](demo/cxr_demo_kaggle.ipynb)**, create a
+[Kaggle notebook](https://www.kaggle.com/code), and upload it with **File > Import Notebook**.
+Enable **GPU** and **Internet** under **Settings / Session options**, then run the three code cells in order.
+Open the printed `gradio.live` link, use username **`cxr`** and the generated password, and keep the final cell
+and Kaggle session running. The password and link change on each launch. The weights are public; no Hugging Face
+token is required. Tested on a Kaggle Tesla T4 GPU.
+
+GPU access may require Kaggle phone verification and available GPU quota.
+Setup details, troubleshooting, and shutdown instructions: **[demo/README.md](demo/README.md#run-on-kaggle-gpu)**.
+
+### Run on your own NVIDIA GPU
+
 `demo/` is a self-contained Gradio app: prompt → synthetic X-ray from any of the 7 report generators → held-out judge,
 anatomy/OOD defect check and two DenseNet-121 classifiers. It downloads only the models it needs (~2.2 GB) from
 [`SillySom/ie643-cxr-diffusion-weights`](https://huggingface.co/SillySom/ie643-cxr-diffusion-weights):
 ```bash
-export HF_TOKEN=hf_...            # read token with access to the (private) weights repo
 pip install -r demo/requirements.txt
 python demo/app.py                # http://127.0.0.1:7860
 ```
